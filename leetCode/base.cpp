@@ -42,3 +42,16 @@ void base::PrintToMaxOfNDigits(int n) {
 	}
 	delete []num;
 }
+
+void DeleteNode(ListNode** pListNode, ListNode* pToBeDel) {
+	if (*pListNode == nullptr|| pToBeDel==nullptr) {
+		return;
+	}
+	pToBeDel->m_key = pToBeDel->next->m_key;
+
+	ListNode * temp = pToBeDel->next;
+
+	pToBeDel->next = temp;
+
+
+}

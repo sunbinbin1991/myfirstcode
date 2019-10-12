@@ -1,3 +1,4 @@
+//#include"typedef.h"
 void get_next(string p, int *next) {
 
 	next[0] = -1;           //while the first char not match, i++,j++
