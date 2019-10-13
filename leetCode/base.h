@@ -38,6 +38,13 @@ public:
 
 	bool isNumString(const char* str);
 
+	/*
+	Offer-21
+	*/
+
+	void RecorderOldEven(int * pdata,int length);
+
+
 private:
 
 };

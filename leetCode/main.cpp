@@ -34,6 +34,24 @@ void test_isNumString() {
 
 }
 
+void test_recordeeOldEven() {
+	int len =10;
+	int *data = new int[len];
+	for (size_t i = 0; i < len; i++)
+	{	
+		data[i] = i;
+	}
+	base alg;
+	alg.RecorderOldEven(data, len);
+	for (size_t i = 0; i < len; i++)
+	{
+		printf("res = %d\n", data[i]);
+	}
+
+
+
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -41,8 +59,10 @@ int main(){
 	//test_string_pattern();
 	//test_printToMaxOfNDigits();
 	//test_delListNode();
+	//test_isNumString();
 
-	test_isNumString();
+	test_recordeeOldEven();
+
 
 	system("pause");
 	return -1;

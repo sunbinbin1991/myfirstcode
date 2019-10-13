@@ -99,3 +99,28 @@ bool base::isNumString(const char* str){
 
 	return isNum && *str == '\0';	
 }
+
+void base::RecorderOldEven(int *data, int len) {
+	if (data == nullptr || len <= 0){
+		return;
+	}
+
+	int* p_begin = data;
+	int* p_end = data+len-1;
+
+	while (p_begin < p_end) {
+		if (p_begin < p_end&&(*p_begin & 0x01) != 0) {
+			p_begin++;
+		}
+		if (p_begin < p_end&&(*p_end & 0x01) == 0) {
+			p_end--;
+		}
+		//这种操作可以交换指针对应的值；
+		if (p_begin < p_end) {
+			int temp = *p_begin;
+			*p_begin = *p_end;
+			*p_end = temp;
+		}
+	}
+
+}
