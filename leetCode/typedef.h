@@ -6,7 +6,7 @@ struct ListNode
 };
 
 
-void createList(ListNode* &pHead)
+inline void createList(ListNode* &pHead)
 {
 	pHead = new ListNode;
 	pHead->m_key = 0;

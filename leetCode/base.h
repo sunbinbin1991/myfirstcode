@@ -32,6 +32,11 @@ public:
 	
 	void DeleteNode(ListNode** pListNode, ListNode* pToBeDel);
 
+	/*
+	Offer-20
+	*/
+
+	bool isNumString(const char* str);
 
 private:
 

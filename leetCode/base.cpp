@@ -43,15 +43,59 @@ void base::PrintToMaxOfNDigits(int n) {
 	delete []num;
 }
 
-void DeleteNode(ListNode** pListNode, ListNode* pToBeDel) {
-	if (*pListNode == nullptr|| pToBeDel==nullptr) {
+void base::DeleteNode(ListNode** pListNode, ListNode* pToBeDel) {
+	if (!pListNode||*pListNode == nullptr|| pToBeDel==nullptr) {
 		return;
 	}
-	pToBeDel->m_key = pToBeDel->next->m_key;
+	if (pToBeDel->next != nullptr) {
+		//listnode need del is not tail
+		pToBeDel->m_key = pToBeDel->next->m_key;
 
-	ListNode * temp = pToBeDel->next;
+		ListNode * temp = pToBeDel->next;
 
-	pToBeDel->next = temp;
+		pToBeDel->next = temp;
+	}
+	else if (* pListNode==pToBeDel) {
+		//listnode has only one node
+		delete pToBeDel;
+		pToBeDel = nullptr;
+		*pListNode = nullptr;
+	}
+	else {
+		//listnode has a lot of node,del the last one
+		ListNode * pNode = *pListNode;
+		while (pNode->next !=pToBeDel)
+		{
+			pNode = pNode->next;
+		}
+
+		pNode->next = nullptr;
+		delete pToBeDel;
+		pToBeDel = nullptr;
 
 
+
+	}
+	
+
+
+
+}    
+
+bool base::isNumString(const char* str){
+	if (str == nullptr) {
+		return false;
+	}
+	bool isNum = false;
+	isNum = scannInteger(&str);
+	if (*str == '.') {
+		++str;
+		isNum = scannUnsignedInteger(&str) || isNum;
+	}
+	if (*str == 'e' || *str == 'E') {
+		++str;
+		isNum = isNum && scannInteger(&str);
+	}
+
+	return isNum && *str == '\0';	
 }

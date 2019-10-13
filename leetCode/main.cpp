@@ -23,12 +23,16 @@ void test_delListNode() {
 	ListNode* head = NULL;
 	createList(head);
 	base alg;
-
 	ListNode* delNode;
-	
-
 }
 
+void test_isNumString() {
+	string m_str = "-100E-12";
+	base alg;
+	bool isNum = alg.isNumString(m_str.c_str());
+	printf("isNum = %d ", isNum);
+
+}
 
 int main(){
 	printf("*******************\n");
@@ -36,8 +40,9 @@ int main(){
 	printf("*******************\n");
 	//test_string_pattern();
 	//test_printToMaxOfNDigits();
+	//test_delListNode();
 
-	test_delListNode();
+	test_isNumString();
 
 	system("pause");
 	return -1;

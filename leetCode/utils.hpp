@@ -61,3 +61,19 @@ bool Increment(char* num) {
 	}
 	return isOverflow;
 }
+
+bool scannUnsignedInteger(const char** str) {
+	const char* before = *str;
+	while (**str!='\0'&&**str>='0'&&**str<='9')
+		++(*str);
+
+	//printf("%d %d %d 2\n ", &(**str), &(*str),&(str));
+	return *str > before;
+}
+ 
+bool scannInteger(const char** str) {
+	if (**str == '+' || **str == '-') {
+		++(*str);
+	}
+	return scannUnsignedInteger(str);
+}
