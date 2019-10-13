@@ -124,3 +124,16 @@ void base::RecorderOldEven(int *data, int len) {
 	}
 
 }
+
+void base::PrintMatrixClockwisely(int **data, int col, int row) {
+	if (data == nullptr || col <= 0 || row <= 0) {
+		return;
+	}
+	int start = 0;
+
+	while (col > start * 2 && row > start * 2) {
+		PrintMatrixClockCircle(data, col, row, start);
+		start++;
+	}
+
+}

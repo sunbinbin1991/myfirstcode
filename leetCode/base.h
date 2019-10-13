@@ -44,6 +44,11 @@ public:
 
 	void RecorderOldEven(int * pdata,int length);
 
+	/*
+	Offer-29
+	*/
+
+	void PrintMatrixClockwisely(int **data, int col, int row);
 
 private:
 

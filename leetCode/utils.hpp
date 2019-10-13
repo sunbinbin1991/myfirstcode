@@ -1,4 +1,8 @@
 //#include"typedef.h"
+void printfNum(int num) {
+	printf("%d\t", num);
+}
+
 void get_next(string p, int *next) {
 
 	next[0] = -1;           //while the first char not match, i++,j++
@@ -76,4 +80,48 @@ bool scannInteger(const char** str) {
 		++(*str);
 	}
 	return scannUnsignedInteger(str);
+}
+
+void PrintMatrixClockCircle(int **data,int col, int row,int start) {
+	if (data == nullptr) {
+		return;
+	}
+	int endY = row - start - 1;
+	int endX = col - start - 1;
+	//--->
+	for (int i = start; i <= endX; i++)
+	{
+		int num = data[start][i];
+		printfNum(num);
+	}
+	printf("\n");
+	//----¡ı
+	if (endX > start) {
+		for (int i = start + 1; i <= endY; i++)
+		{
+			int num = data[i][endX];
+			printfNum(num);
+		}
+	}
+	printf("\n");
+	//¡û---- 
+	if (endX > start&&endY > start) {
+		for (int i = endX-1; i >=start; i--)
+		{
+			int num = data[endY][i];
+			printfNum(num);
+		}
+	}
+	printf("\n");
+	//----¡ü
+	if (start < endX && start < endY - 1) {
+		for (int i = endY-1; i >=start+1; i--)
+		{
+			int num = data[i][start];
+			printfNum(num);
+		}
+	}
+	printf("\n");
+
+	
 }

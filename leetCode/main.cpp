@@ -4,6 +4,10 @@
 #include<iostream>
 #include <map>
 #include <bitset>
+
+#include"print.h"
+#include"common/StackWithMin.h"
+
 using namespace std;
 
 void test_string_pattern() {
@@ -47,9 +51,45 @@ void test_recordeeOldEven() {
 	{
 		printf("res = %d\n", data[i]);
 	}
+}
 
+void test_printMatrixClockwisely() {
+	int matrix[3][3] = { {1,2,3},{4,5,6},{7,8,9} };	
+	int **data = (int**)matrix;
+	int totalnums = sizeof(matrix) / sizeof(int);  //元素总个数
+	int cols = sizeof(matrix[0]) / sizeof(int);  //行
+	int rows = totalnums / cols;
+	int len = 6;
+	int **mat = new int*[4];
+	for (size_t i = 0; i < len; i++)
+	{
+		mat[i] = new int[len];
+		for (size_t j = 0; j < len; j++)
+		{
+			*(*(mat + i) + j) = len*i + j;
+		}
+	}
+	printMatrix(mat, len, len);
+	
+	base alg;
+	alg.PrintMatrixClockwisely(mat, len, len);
 
+}
 
+void test_minStack() {
+	StackWithMin<int> stack;
+	stack.push(3);
+	printf("stack min =%d\n",stack.min());
+	stack.push(2);
+	printf("stack min =%d\n", stack.min());
+	stack.push(3);
+	printf("stack min =%d\n", stack.min());
+	stack.push(1);
+	printf("stack min =%d\n", stack.min());
+	stack.pop();
+	stack.pop();
+	stack.pop();
+	printf("stack min =%d\n", stack.min());
 }
 
 int main(){
@@ -60,10 +100,10 @@ int main(){
 	//test_printToMaxOfNDigits();
 	//test_delListNode();
 	//test_isNumString();
+	//test_recordeeOldEven();
+	//test_printMatrixClockwisely();
 
-	test_recordeeOldEven();
-
-
+	test_minStack();
 	system("pause");
 	return -1;
 }

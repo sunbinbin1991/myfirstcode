@@ -158,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base.h" />
+    <ClInclude Include="common\StackWithMin.h" />
+    <ClInclude Include="print.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="typedef.h" />
     <ClInclude Include="utils.hpp" />
   </ItemGroup>
