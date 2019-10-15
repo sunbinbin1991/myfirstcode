@@ -92,6 +92,17 @@ void test_minStack() {
 	printf("stack min =%d\n", stack.min());
 }
 
+void test_isStackOrder() {
+	int data1[5] = { 1,2,3,4,5 };
+	int data2[5] = { 4,5,3,1,2 };
+	base alg;
+	bool res = alg.isPopOrder(data1, data2, 5);
+
+	printf("res = %d", res);
+
+
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -102,8 +113,10 @@ int main(){
 	//test_isNumString();
 	//test_recordeeOldEven();
 	//test_printMatrixClockwisely();
+	//test_minStack();
 
-	test_minStack();
+	test_isStackOrder();
+
 	system("pause");
 	return -1;
 }

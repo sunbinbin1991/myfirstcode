@@ -50,6 +50,12 @@ public:
 
 	void PrintMatrixClockwisely(int **data, int col, int row);
 
+	/*
+	Offer-31
+	*/
+
+	bool isPopOrder(int *sPush, int * sPop, int nlength);
+
 private:
 
 };

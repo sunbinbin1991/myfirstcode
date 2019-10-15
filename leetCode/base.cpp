@@ -1,6 +1,6 @@
 #include"base.h"
 #include"utils.hpp"
-
+#include <stack>
 
 int base::stringPattern(string T, string p, int pos) {
 
@@ -137,3 +137,36 @@ void base::PrintMatrixClockwisely(int **data, int col, int row) {
 	}
 
 }
+
+bool base::isPopOrder(int *sPush, int * sPop, int nlength) {
+	if (sPop == nullptr || sPush == nullptr) {
+		return false;
+	}
+	bool res = false;
+	std::stack<int> stack_container;
+	if (sPush != nullptr&&sPop != nullptr&&nlength > 0) {
+		const int* pNextPush = sPush;
+		const int* pNextPop = sPop;
+		
+		while (pNextPop - sPop < nlength) {
+			while (stack_container.empty() || stack_container.top() != *pNextPop) {
+				if (pNextPush - sPush == nlength) {
+					break;
+				}
+				stack_container.push(*pNextPop);
+				pNextPush++;
+			}
+			
+			if (stack_container.top() != *pNextPop) {
+				break;
+			}
+			stack_container.pop();
+			pNextPop++;
+
+			if (stack_container.empty() && pNextPop - sPop == nlength) {
+				res = true;
+			}
+		}
+		return res;
+	}
+};
