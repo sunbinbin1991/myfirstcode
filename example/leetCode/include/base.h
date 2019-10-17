@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<vector>
 #include"typedef.h"
+#include "BinaryTree.h"
 
 using std::string;
 using namespace std;
@@ -55,6 +56,13 @@ public:
 	*/
 
 	bool isPopOrder(int *sPush, int * sPop, int nlength);
+
+
+	/*
+	Offer-32
+	*/
+
+	void printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot);
 
 private:
 

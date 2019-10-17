@@ -137,7 +137,10 @@ void base::PrintMatrixClockwisely(int **data, int col, int row) {
 	}
 
 }
-
+/*
+借助辅助栈，判定序列依次读入，若辅助队列为空，则直接和原始队列比较，直到获得相同数据；
+若是非相同数据，则将数据存入辅助栈
+*/
 bool base::isPopOrder(int *sPush, int * sPop, int nlength) {
 	if (sPop == nullptr || sPush == nullptr) {
 		return false;
@@ -148,7 +151,7 @@ bool base::isPopOrder(int *sPush, int * sPop, int nlength) {
 		const int* pNextPush = sPush;
 		const int* pNextPop = sPop;
 		
-		while (pNextPop - sPop < nlength) {
+		while (pNextPop - sPop < nlength) {//判定序列依次读入，当=nlength时，代表数据已经读完了
 			while (stack_container.empty() || stack_container.top() != *pNextPop) {
 				if (pNextPush - sPush == nlength) {
 					break;
@@ -169,4 +172,34 @@ bool base::isPopOrder(int *sPush, int * sPop, int nlength) {
 		}
 		return res;
 	}
+};
+
+void base::printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot) {
+	if (pTreeRoot==nullptr)
+	{
+		return ;
+	}
+
+	std::deque<BinaryTreeNode* > dequeTree;
+
+	dequeTree.push_back(pTreeRoot);
+
+	while (dequeTree.size()) {
+	
+		BinaryTreeNode* front = dequeTree.front();
+	
+		dequeTree.pop_front();
+
+		printf("%d ", front->m_nValue);
+
+		if (front->m_pLeft) {
+			dequeTree.push_back(front->m_pLeft);
+		}
+
+		if (front->m_pRight) {
+			dequeTree.push_back(front->m_pRight);
+		}
+	}
+
+
 };
