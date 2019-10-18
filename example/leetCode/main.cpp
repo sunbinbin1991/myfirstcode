@@ -128,6 +128,29 @@ void test_printBinaryTreeFromTopToBottom() {
 
 }
 
+void test_printBinaryTreeFromLeftToRight() {
+	BinaryTreeNode* pNode8 = CreateBinaryTreeNode(8);
+	BinaryTreeNode* pNode6 = CreateBinaryTreeNode(6);
+	BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);
+	BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);
+	BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);
+	BinaryTreeNode* pNode9 = CreateBinaryTreeNode(9);
+	BinaryTreeNode* pNode11 = CreateBinaryTreeNode(11);
+
+	ConnectTreeNodes(pNode8, pNode6, pNode10);
+	ConnectTreeNodes(pNode6, pNode5, pNode7);
+	ConnectTreeNodes(pNode10, pNode9, pNode11);
+
+	printf("====Test1 Begins: ====\n");
+	printf("Expected Result is:\n");
+	printf("8 \n");
+	printf("6 10 \n");
+	printf("5 7 9 11 \n\n");
+
+	base alg;
+	alg.printBinaryTreeFromLeftToRight(pNode8);
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -140,8 +163,9 @@ int main(){
 	//test_printMatrixClockwisely();
 	//test_minStack();
 	//test_isStackOrder();
+	//test_printBinaryTreeFromTopToBottom();
 
-	test_printBinaryTreeFromTopToBottom();
+	test_printBinaryTreeFromLeftToRight();
 
 	system("pause");
 	return -1;

@@ -64,6 +64,13 @@ public:
 
 	void printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot);
 
+	/*
+	Offer-33
+	*/
+
+	void printBinaryTreeFromLeftToRight(BinaryTreeNode* pTreeRoot);
+
+
 private:
 
 };

@@ -1,7 +1,7 @@
 #include"base.h"
 #include"utils.hpp"
 #include <stack>
-
+#include <queue>
 int base::stringPattern(string T, string p, int pos) {
 
 	int i = 0;
@@ -199,6 +199,47 @@ void base::printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot) {
 		if (front->m_pRight) {
 			dequeTree.push_back(front->m_pRight);
 		}
+	}
+
+
+};
+
+void base::printBinaryTreeFromLeftToRight(BinaryTreeNode* pTreeRoot) {
+	if (pTreeRoot==nullptr)
+	{
+		return;
+	}
+
+	std::queue<BinaryTreeNode* > queueTree;
+
+	queueTree.push(pTreeRoot);
+
+	bool isPrintAll = false;
+	int nextLevel = 0;
+	int toBeprint = 1;
+	while (!queueTree.empty()) {
+		BinaryTreeNode *front = queueTree.front();
+		printf("%d", front->m_nValue);
+		if (front->m_pLeft != nullptr) {
+			queueTree.push(front->m_pLeft);
+			nextLevel++;
+			//printf("%d", front->m_nValue);
+		}
+
+		if (front->m_pRight != nullptr) {
+			queueTree.push(front->m_pRight);
+			nextLevel++;
+			//printf("%d", front->m_nValue);
+		}
+		queueTree.pop();
+		--toBeprint;
+		if (toBeprint == 0) {
+			printf("\n");
+			toBeprint = nextLevel;
+			nextLevel = 0;
+		}
+
+
 	}
 
 
