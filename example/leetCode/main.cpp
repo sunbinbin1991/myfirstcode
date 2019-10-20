@@ -151,6 +151,39 @@ void test_printBinaryTreeFromLeftToRight() {
 	alg.printBinaryTreeFromLeftToRight(pNode8);
 }
 
+void test_printBinaryTreeZway() {
+	BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);
+	BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);
+	BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);
+	BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);
+	BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);
+	BinaryTreeNode* pNode6 = CreateBinaryTreeNode(6);
+	BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);
+	BinaryTreeNode* pNode8 = CreateBinaryTreeNode(8);
+	BinaryTreeNode* pNode9 = CreateBinaryTreeNode(9);
+	BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);
+	BinaryTreeNode* pNode11 = CreateBinaryTreeNode(11);
+	BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);
+	BinaryTreeNode* pNode13 = CreateBinaryTreeNode(13);
+	BinaryTreeNode* pNode14 = CreateBinaryTreeNode(14);
+	BinaryTreeNode* pNode15 = CreateBinaryTreeNode(15);
+
+	ConnectTreeNodes(pNode1, pNode2, pNode3);
+	ConnectTreeNodes(pNode2, pNode4, pNode5);
+	ConnectTreeNodes(pNode3, pNode6, pNode7);
+	ConnectTreeNodes(pNode4, pNode8, pNode9);
+	ConnectTreeNodes(pNode5, pNode10, pNode11);
+	ConnectTreeNodes(pNode6, pNode12, pNode13);
+	ConnectTreeNodes(pNode7, pNode14,nullptr);
+
+	base alg;
+	alg.printBinaryTreeFromLeftToRight(pNode1);
+
+	alg.prinBinaryTreeZway(pNode1);
+}
+
+
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -164,8 +197,8 @@ int main(){
 	//test_minStack();
 	//test_isStackOrder();
 	//test_printBinaryTreeFromTopToBottom();
-
-	test_printBinaryTreeFromLeftToRight();
+	//test_printBinaryTreeFromLeftToRight();
+	test_printBinaryTreeZway();
 
 	system("pause");
 	return -1;

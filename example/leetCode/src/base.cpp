@@ -191,7 +191,7 @@ void base::printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot) {
 		dequeTree.pop_front();
 
 		printf("%d ", front->m_nValue);
-
+		
 		if (front->m_pLeft) {
 			dequeTree.push_back(front->m_pLeft);
 		}
@@ -219,7 +219,7 @@ void base::printBinaryTreeFromLeftToRight(BinaryTreeNode* pTreeRoot) {
 	int toBeprint = 1;
 	while (!queueTree.empty()) {
 		BinaryTreeNode *front = queueTree.front();
-		printf("%d", front->m_nValue);
+		printf("%d\t", front->m_nValue);
 		if (front->m_pLeft != nullptr) {
 			queueTree.push(front->m_pLeft);
 			nextLevel++;
@@ -238,9 +238,84 @@ void base::printBinaryTreeFromLeftToRight(BinaryTreeNode* pTreeRoot) {
 			toBeprint = nextLevel;
 			nextLevel = 0;
 		}
-
-
 	}
 
+
+};
+
+void base::prinBinaryTreeZway(BinaryTreeNode* pTreeRoot) {
+	if (pTreeRoot == nullptr) return;
+	
+	stack<BinaryTreeNode*> stackcomb[2];
+	int current = 0;
+	int next = 1;
+	stackcomb[0].push(pTreeRoot);
+
+	while (!stackcomb[0].empty() || !stackcomb[1].empty()) {
+		BinaryTreeNode* front = stackcomb[current].top();
+		printf("%d ", front->m_nValue);
+		stackcomb[current].pop();
+		if (current != 0) {
+			if (front->m_pRight != nullptr) {
+				stackcomb[next].push(front->m_pRight);
+			}
+			if (front->m_pLeft != nullptr) {
+				stackcomb[next].push(front->m_pLeft);
+			}
+		}
+		else {
+			if (front->m_pLeft != nullptr) {
+				stackcomb[next].push(front->m_pLeft);
+			}
+			if (front->m_pRight != nullptr) {
+				stackcomb[next].push(front->m_pRight);
+			}
+		}
+		if (stackcomb[current].empty()) {
+			printf("\n");
+			current = 1 - current;
+			next = 1 - next;
+		}		
+	}
+}
+
+bool base::VerifySeqOfBST(int seq[], int length) {
+
+	if (seq == nullptr || length <= 0) {
+		return false;
+	}
+	//find root
+	int root_value = seq[length-1];
+	//find left 
+	int right_index;
+	for (size_t i = 0; i < length-1; i++)
+	{
+		if (seq[i] > root_value) {
+			right_index = i;
+			break;
+		}
+	}
+	//find right
+	for (size_t i = root_value; i < length-1; i++)
+	{
+		if (seq[i] < root_value) {
+			return false;
+		}
+	}
+
+	////judge left
+	//for (size_t i = 0; i < right_index -1; i++)
+	//{
+	//	if (seq[i] > root_value) {
+	//		return false;
+	//	}
+	//}
+
+	bool left = true;
+	bool right = true;
+	if (right_index > 0) left = VerifySeqOfBST(seq, right_index);
+	if (right_index <= length -1) right = VerifySeqOfBST(seq+right_index, length-1-right_index);
+
+	return left&&right;
 
 };

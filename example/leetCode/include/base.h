@@ -65,11 +65,22 @@ public:
 	void printBinaryTreeFromTomToBottom(BinaryTreeNode* pTreeRoot);
 
 	/*
-	Offer-33
+	Offer-32-2
 	*/
 
 	void printBinaryTreeFromLeftToRight(BinaryTreeNode* pTreeRoot);
 
+	/*
+	Offer-32-3
+	*/
+
+	void base::prinBinaryTreeZway(BinaryTreeNode* pTreeRoot);
+
+	/*
+	Offer-33
+	*/
+
+	bool base::VerifySeqOfBST(int arry[],int len);
 
 private:
 
