@@ -125,3 +125,29 @@ void PrintMatrixClockCircle(int **data,int col, int row,int start) {
 
 	
 }
+
+void FindPath(BinaryTreeNode* pRoot, int expectSum, std::vector<int> path, int currentsum) {
+	if (pRoot == nullptr) {
+		return;
+	}
+	path.push_back(pRoot->m_nValue);
+	currentsum += pRoot->m_nValue;
+	if (pRoot->m_pLeft == nullptr&& pRoot->m_pRight == nullptr&& expectSum == currentsum) {
+		printf("find a path");
+		std::vector<int>::iterator itr = path.begin();//这种方法遍历数组的好处在哪？？更快了？？？
+		for (; itr != path.end(); ++itr) {
+			printf(" %d ", *itr);
+		}
+		printf("\n");
+	}
+	if (pRoot->m_pLeft != nullptr) {
+		FindPath(pRoot->m_pLeft, expectSum, path, currentsum);
+	}
+	if (pRoot->m_pRight != nullptr) {
+		FindPath(pRoot->m_pRight, expectSum, path, currentsum);
+	}
+
+	path.pop_back();
+
+
+}

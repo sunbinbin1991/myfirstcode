@@ -319,3 +319,12 @@ bool base::VerifySeqOfBST(int seq[], int length) {
 	return left&&right;
 
 };
+
+void base::findPath(BinaryTreeNode *pRoot, int expectSum) {
+	if (pRoot == nullptr) {
+		return;
+	}
+	std::vector<int> path;
+	int currSum = 0;
+	FindPath(pRoot, expectSum, path, currSum);
+};

@@ -82,6 +82,11 @@ public:
 
 	bool base::VerifySeqOfBST(int arry[],int len);
 
+	/*	
+	Offer-34
+	*/
+
+	void base::findPath(BinaryTreeNode *pRoot, int expectSum);
 private:
 
 };
