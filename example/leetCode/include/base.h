@@ -87,6 +87,12 @@ public:
 	*/
 
 	void base::findPath(BinaryTreeNode *pRoot, int expectSum);
+
+	/*
+	Offer-35
+	*/
+	void cloneComplexListNode(ComplexListNode* pHead);
+
 private:
 
 };

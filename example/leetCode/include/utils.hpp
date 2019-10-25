@@ -151,3 +151,48 @@ void FindPath(BinaryTreeNode* pRoot, int expectSum, std::vector<int> path, int c
 
 
 }
+
+ComplexListNode * cloneComplexListNode(ComplexListNode* pHead) {
+	if (pHead == nullptr) {
+		return;
+	}
+	ComplexListNode* pNode = pHead;
+	while (pNode != nullptr) {
+		ComplexListNode * tmpNode = new ComplexListNode();
+		tmpNode->m_value = pNode->m_value;
+		tmpNode->m_pNext = pNode->m_pNext;
+		tmpNode->m_pSibling = pNode->m_pSibling;
+		pNode->m_pNext = tmpNode;
+		pNode = pNode->m_pNext;
+	}
+}
+
+ComplexListNode * connectSimpleNode(ComplexListNode* pHead) {
+	ComplexListNode* pNode = pHead;
+	while (pNode!=nullptr)
+	{
+		ComplexListNode* tmpNode = pNode->m_pNext;
+		if (pNode->m_pSibling != nullptr) {
+			tmpNode->m_pSibling = pNode->m_pSibling->m_pNext;//
+			//tmpNode->m_pSibling = pNode->m_pSibling;//deference beteen upper
+		}
+		pNode = pNode->m_pNext;
+	}
+}
+
+ComplexListNode * reconnectNode(ComplexListNode* pHead) {
+	ComplexListNode *pNode = pHead;
+	ComplexListNode *pCloneHead = nullptr;
+	ComplexListNode *pCloneNode = nullptr;
+	if (pNode != nullptr) {
+		pCloneHead = pCloneNode = pNode->m_pNext;
+		pNode->m_pNext = pCloneHead->m_pNext;
+		pNode = pNode->m_pNext;
+	}
+	while (pNode != nullptr) {
+		pCloneNode->m_pNext = pNode->m_pNext;
+		pCloneNode = pCloneNode->m_pNext;
+		pNode->m_pNext = pCloneNode->m_pNext;
+		pNode = pNode->m_pNext;
+	}
+}

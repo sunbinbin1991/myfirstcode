@@ -5,6 +5,12 @@ struct ListNode
 	ListNode * next;
 };
 
+struct ComplexListNode {
+	int m_value;
+	ComplexListNode * m_pNext;
+	ComplexListNode * m_pSibling;
+};
+
 
 inline void createList(ListNode* &pHead)
 {

@@ -206,6 +206,8 @@ void test_findPath() {
 
 }
 
+void test_cloneComplexNode() {
+}
 
 int main(){
 	printf("*******************\n");
@@ -222,8 +224,7 @@ int main(){
 	//test_printBinaryTreeFromTopToBottom();
 	//test_printBinaryTreeFromLeftToRight();
 	//test_printBinaryTreeZway();
-
-	test_findPath();
+	//test_findPath();
 
 	system("pause");
 	return -1;

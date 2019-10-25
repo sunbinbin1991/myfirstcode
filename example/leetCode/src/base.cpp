@@ -328,3 +328,9 @@ void base::findPath(BinaryTreeNode *pRoot, int expectSum) {
 	int currSum = 0;
 	FindPath(pRoot, expectSum, path, currSum);
 };
+
+void base::cloneComplexListNode(ComplexListNode* pHead) {
+	cloneComplexListNode(pHead);
+	connectSimpleNode(pHead);
+	reconnectNode(pHead);	
+};
