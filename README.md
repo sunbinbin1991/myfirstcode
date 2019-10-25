@@ -4,10 +4,11 @@
 * my first code，主要是为了练习一些常见的代码，提高逻辑能力的，后续会加入当前的leetcode和其他见到的有趣题目；
 
 
-### FAQ:
+### 一些有用的资料:
 * 1：我们为什么要刷题：
 https://selfboot.cn/2016/07/24/leetcode_guide_why/
-
+* 2：Google 开源项目风格指南
+https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/
 
 ### 鸡汤时刻：
 * 牛逼的人这么多，凭什么不是别人呢！
