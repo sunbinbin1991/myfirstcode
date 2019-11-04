@@ -227,6 +227,23 @@ void test_halfInArray() {
 
 }
 
+void test_getTopKBig() {
+	std::vector<int> nums = {9,2,3,4,4,5,7,8,10};
+	inSet inset;
+	//for (size_t i = 0; i < nums.size(); i++)
+	//{
+	//	inset.insert(nums[i]);
+	//}
+
+
+	base alg;
+	alg.getTopKGreater(nums, inset, 5);
+	inSet::const_iterator iter = inset.begin();
+	for (; iter != inset.end(); iter++) {
+		printf("%d \n", *iter);
+	}
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -244,8 +261,9 @@ int main(){
 	//test_printBinaryTreeZway();
 	//test_findPath();
 	//test_pematation();
+	//test_halfInArray();
 
-	test_halfInArray();
+	test_getTopKBig();
 
 	printf("\n");
 	system("pause");

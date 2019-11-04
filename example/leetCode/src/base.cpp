@@ -369,3 +369,25 @@ int base::halfInArray(int *array, int length) {
 
 
 };
+
+void base::getTopKGreater(const vector<int>data, inSet& inset, int topK) {
+	inset.clear();
+	if (topK < 0 || data.size() < topK) {
+		return;
+	}
+
+
+	for (size_t i = 0; i < data.size(); i++)
+	{
+		if (inset.size() < topK) {
+			inset.insert(data[i]);
+		}
+		{
+			inSetIterator itrLeast = inset.begin();
+			if (data[i] > *(inset.begin()) ){
+				inset.erase(itrLeast);
+				inset.insert(data[i]);
+			}
+		}
+	}
+};

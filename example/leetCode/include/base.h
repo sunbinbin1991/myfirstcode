@@ -2,12 +2,16 @@
 #include<iostream>
 #include<stdio.h>
 #include<vector>
+#include<set>
+#include <functional>
 #include"typedef.h"
 #include "BinaryTree.h"
 
 using std::string;
 using namespace std;
 
+typedef multiset<int, less<int> > inSet;
+typedef multiset<int, less<int> >::iterator inSetIterator;
 class base {
 public:
 	//string related
@@ -102,6 +106,11 @@ public:
 	Offer-39
 	*/
 	int halfInArray(int *array, int length);
+
+	/*
+	Offer-40
+	*/
+	void getTopKGreater(const vector<int>data, inSet& inset, int topK);
 
 private:
 
