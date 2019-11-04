@@ -334,3 +334,38 @@ void base::cloneComplexListNode(ComplexListNode* pHead) {
 	connectSimpleNode(pHead);
 	reconnectNode(pHead);	
 };
+
+void base::permutation(char* pstr) {
+	if (pstr==nullptr)
+	{
+		return;
+	}
+	Permutation(pstr,pstr);
+
+};
+
+int base::halfInArray(int *array, int length) {
+	if (array == nullptr || length <= 0) {
+		return 0;
+	}
+
+	int result = array[0];
+	int times = 1;
+	for (size_t i = 1; i < length; i++)
+	{
+		if (times == 0) {
+			result = array[i];
+			times = 1;
+		}
+		else if (result == array[i]) {
+			times++;
+		}
+		else
+		{
+			times--;
+		}
+	}
+	return result;
+
+
+};

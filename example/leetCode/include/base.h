@@ -93,6 +93,16 @@ public:
 	*/
 	void cloneComplexListNode(ComplexListNode* pHead);
 
+	/*
+	Offer-38
+	*/
+	void permutation(char* pStr);
+
+	/*
+	Offer-39
+	*/
+	int halfInArray(int *array, int length);
+
 private:
 
 };

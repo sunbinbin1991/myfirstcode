@@ -152,9 +152,9 @@ void FindPath(BinaryTreeNode* pRoot, int expectSum, std::vector<int> path, int c
 
 }
 
-ComplexListNode * cloneComplexListNode(ComplexListNode* pHead) {
+void  cloneComplexListNode(ComplexListNode* pHead) {
 	if (pHead == nullptr) {
-		return;
+		return ;
 	}
 	ComplexListNode* pNode = pHead;
 	while (pNode != nullptr) {
@@ -167,7 +167,7 @@ ComplexListNode * cloneComplexListNode(ComplexListNode* pHead) {
 	}
 }
 
-ComplexListNode * connectSimpleNode(ComplexListNode* pHead) {
+void connectSimpleNode(ComplexListNode* pHead) {
 	ComplexListNode* pNode = pHead;
 	while (pNode!=nullptr)
 	{
@@ -180,7 +180,7 @@ ComplexListNode * connectSimpleNode(ComplexListNode* pHead) {
 	}
 }
 
-ComplexListNode * reconnectNode(ComplexListNode* pHead) {
+void reconnectNode(ComplexListNode* pHead) {
 	ComplexListNode *pNode = pHead;
 	ComplexListNode *pCloneHead = nullptr;
 	ComplexListNode *pCloneNode = nullptr;
@@ -196,3 +196,48 @@ ComplexListNode * reconnectNode(ComplexListNode* pHead) {
 		pNode = pNode->m_pNext;
 	}
 }
+
+void permutationPart(char* pstr, char* pbegin) {
+	if(*pbegin=='\0')
+	{
+		printf("%s\n", pstr);
+	}
+	else
+	{
+		for (char* pch = pbegin;*pch!='\0';++pch)
+		{
+			char temp = *pch;
+			*pch = *pbegin;
+			*pbegin = temp;
+			permutationPart(pstr, pbegin+1);
+
+			temp = *pch;
+			*pch = *pbegin;
+			*pbegin = temp;
+		}
+	}
+}
+
+void Permutation(char* pStr, char* pBegin)
+{
+	if (*pBegin == '\0')
+	{
+		printf("%s\n", pStr);
+	}
+	else
+	{
+		for (char* pCh = pBegin; *pCh != '\0'; ++pCh)
+		{
+			char temp = *pCh;
+			*pCh = *pBegin;
+			*pBegin = temp;
+
+			Permutation(pStr, pBegin + 1);
+
+			temp = *pCh;
+			*pCh = *pBegin;
+			*pBegin = temp;
+		}
+	}
+}
+

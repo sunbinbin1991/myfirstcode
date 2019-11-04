@@ -16,6 +16,9 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 有时候需要想一下，假如我只能活三天，那么我应该干什么
 
 * 有时候不逼自已一把，都不知道自己的父母还能多努力！
+
+* 小时候的梦想是成为一个有用的人，成为一个科学家，走了太久，已经忘了儿时的梦想，毕竟那时候还不懂事。
+
 ---
 
 * ps：coding never stop!!

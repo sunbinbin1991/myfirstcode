@@ -209,6 +209,24 @@ void test_findPath() {
 void test_cloneComplexNode() {
 }
 
+
+void test_pematation() {
+		char * simple= "helloworld";
+		base alg;
+		alg.permutation(simple);
+}
+
+void test_halfInArray() {
+	int  arry[10] = { 1,2,3,34,4,5,3,3,3,3 };
+	int * ab = new int[5];
+	int ft = 10;
+	float f;
+	base alg;
+	int res = alg.halfInArray(arry, 10);
+	printf("res = %d, sizeof(int) = %d,, sizeof(float) =  %d, sizeof(ab) = %d\n", res, sizeof(int), sizeof(float), sizeof(ab));
+
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -225,7 +243,11 @@ int main(){
 	//test_printBinaryTreeFromLeftToRight();
 	//test_printBinaryTreeZway();
 	//test_findPath();
+	//test_pematation();
 
+	test_halfInArray();
+
+	printf("\n");
 	system("pause");
 	return -1;
 }
