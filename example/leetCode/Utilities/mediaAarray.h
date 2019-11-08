@@ -8,11 +8,11 @@ public:
 		if ((min.size() + max.size()) & 1 == 0) {
 			if (max.size() > 0 && num < max[0]) {
 				max.push_back(num);
-				push_heap(max.begin(), max.end(), less<T>());
+				push_heap(max.begin(), max.end(), less<T>());//大顶堆，自上逐下
 
 				num = max[0];
 
-				pop_heap(max.begin(), max.end(), less<T>());
+				pop_heap(max.begin(), max.end(), less<T>());//大顶堆，弹出堆顶
 				max.pop_back();
 			}
 			min.push_back(num);
