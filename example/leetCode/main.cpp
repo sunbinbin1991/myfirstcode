@@ -205,8 +205,9 @@ void test_findPath() {
 	alg.findPath(pNode8, 27);
 
 }
-
+#include<algorithm>
 void test_cloneComplexNode() {
+	
 }
 
 
@@ -262,8 +263,8 @@ int main(){
 	//test_findPath();
 	//test_pematation();
 	//test_halfInArray();
+	//test_getTopKBig();
 
-	test_getTopKBig();
 
 	printf("\n");
 	system("pause");
