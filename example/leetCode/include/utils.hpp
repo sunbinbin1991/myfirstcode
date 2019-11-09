@@ -241,3 +241,40 @@ void Permutation(char* pStr, char* pBegin)
 	}
 }
 
+int PowerBase10(unsigned int n) {
+	int result = 1;
+	for (size_t i = 0; i < n; i++)
+	{
+		result *= 10;
+	}
+	return result;
+}
+
+int numofone(char * pStr) {
+	if (!*pStr || *pStr<'0' || *pStr>'9' || *pStr == '\0') {
+		return 0;
+	}
+	int first = *pStr- '0';
+	unsigned int len = static_cast<unsigned int>(strlen(pStr));
+	if (len == 1 && first == 0) {
+		return 0;
+	}
+	if (len == 1 && first > 0) {
+		return 1;
+	}
+
+	int numfirstdigit = 0;
+	if (first > 1) {
+	}
+	else if (first ==1) {
+		numfirstdigit = atoi(pStr + 1) + 1;
+	}
+
+	int numotherDig = first * (len - 1)*PowerBase10(len - 1);
+	int numRecur = numofone(pStr + 1);
+	return numfirstdigit + numotherDig + numRecur;
+
+
+
+
+}

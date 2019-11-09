@@ -418,3 +418,14 @@ int base::getConsequentMax(int * arry, int len){
 	}
 	return final_max;
 } 
+
+int base::getNumsofOneBeforeN(int n){
+	if (n <= 0) {
+		return 0;
+	}
+	char strN[50];
+	sprintf(strN,"%d", n);
+	return numofone(strN);
+
+
+}
