@@ -245,6 +245,14 @@ void test_getTopKBig() {
 	}
 }
 
+void test_getcurrentMax() {
+	std::vector<int> nums = {1, -2,3,10,-4,7,2,-5 };
+	base alg;
+	int big = alg.getConsequentMax(nums.data(), nums.size());
+	printf("%d \n", big);
+
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -265,6 +273,7 @@ int main(){
 	//test_halfInArray();
 	//test_getTopKBig();
 
+	test_getcurrentMax();
 
 	printf("\n");
 	system("pause");

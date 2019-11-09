@@ -112,6 +112,12 @@ public:
 	*/
 	void getTopKGreater(const vector<int>data, inSet& inset, int topK);
 
+	/*
+	Offer-42
+	*/
+	int getConsequentMax(int* array, int length);
+
+
 private:
 
 };

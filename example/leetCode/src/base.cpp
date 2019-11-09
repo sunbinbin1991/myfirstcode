@@ -391,3 +391,30 @@ void base::getTopKGreater(const vector<int>data, inSet& inset, int topK) {
 		}
 	}
 };
+
+int base::getConsequentMax(int * arry, int len){
+	if (arry == nullptr || len <= 0) {
+		return 0;
+	}
+	int curr_max = 0;
+	int final_max = 0;
+	for (size_t i = 0; i < len; i++)
+	{
+		curr_max += arry[i];
+		if (curr_max < 0) {
+			curr_max = 0;
+		}
+		/*if (curr_max <= 0) {
+			curr_max = arry[i];
+		}
+		else {
+			curr_max += arry[i];
+		}*/
+
+		if (curr_max > final_max)
+		{
+			final_max = curr_max;
+		}
+	}
+	return final_max;
+} 
