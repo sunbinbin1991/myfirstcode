@@ -122,6 +122,11 @@ public:
 	*/
 	int getNumsofOneBeforeN(int n);
 
+	/*
+	Offer-44:序列中对应第n位对应的数字
+	*/
+	int digAtIndex(int index);
+
 private:
 
 };

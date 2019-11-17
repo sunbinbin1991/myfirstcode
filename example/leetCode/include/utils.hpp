@@ -278,3 +278,28 @@ int numofone(char * pStr) {
 
 
 }
+
+int countOfInteger(int digit) {
+	if (digit == 1) {
+		return 10;
+	}
+	int count = (int)std::pow(10, digit - 1);
+	return count;
+}
+
+int beginNumber(int dig) {
+	if (dig == 1)
+		return 0;
+	return (int)std::pow(10, dig-1);
+}
+
+int digAtIndex2(int index,int dig) {
+	int number = beginNumber(dig) + index / dig;
+	int indexfromright = dig - index%dig;
+	for (size_t i = 0; i < indexfromright; i++)
+	{
+		number /= 10;
+	}
+	return number % 10;
+}
+

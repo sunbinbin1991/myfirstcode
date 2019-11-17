@@ -426,6 +426,22 @@ int base::getNumsofOneBeforeN(int n){
 	char strN[50];
 	sprintf(strN,"%d", n);
 	return numofone(strN);
+}
 
-
+int base::digAtIndex(int index) {
+	if (index <= 0) {
+		return 0;
+	}
+	int digit = 0;
+	while (true) {
+		int num = countOfInteger(digit);
+		if (index < num*digit) {
+			return digAtIndex2(index, digit);
+		}
+		index -= digit*num;
+	}
+	{
+		digit++;
+	}
+	return -1;
 }

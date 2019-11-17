@@ -253,6 +253,22 @@ void test_getcurrentMax() {
 
 }
 
+void test_digitAtIndex() {
+	char* num = "1234567891011121314151617181920";
+	base alg;	
+}
+
+void test_unsignchar() {
+	unsigned char myChar = 'A';
+	unsigned char *A;
+	int B;
+	A = &myChar;
+	B = static_cast<int>(*A);
+	printf("id = %d\n", static_cast<int>(*A));
+	std::cout << B << std::endl;
+}
+
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -272,8 +288,9 @@ int main(){
 	//test_pematation();
 	//test_halfInArray();
 	//test_getTopKBig();
-
-	test_getcurrentMax();
+	//test_getcurrentMax();	
+	//test_digitAtIndex();
+	test_unsignchar();
 
 	printf("\n");
 	system("pause");
