@@ -127,6 +127,16 @@ public:
 	*/
 	int digAtIndex(int index);
 
+	/*
+	Offer-45: combine array to min val
+	*/
+	void printMinNumber(int* number, int length);
+
+
 private:
+	
+	
+public:
+
 
 };

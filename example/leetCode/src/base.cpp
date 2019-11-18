@@ -445,3 +445,31 @@ int base::digAtIndex(int index) {
 	}
 	return -1;
 }
+
+
+void base::printMinNumber(int* number, int length) {
+	if (number == nullptr || length <= 0) {
+		return;
+	}
+
+	char** strNum = (char**)(new int[length]);
+	for (size_t i = 0; i < length; i++)
+	{
+		strNum[i] = new char[g_max_num_len + 1];
+		sprintf(strNum[i], "%d", number[i]);
+	}
+	
+	//Sorts the num elements of the array pointed to by base, each element size bytes long, using the compar function to determine the order.
+	qsort(strNum, length, sizeof(char*), compare);
+	for (size_t i = 0; i < length; i++)
+	{
+		printf("%s", strNum[i]);
+	}
+	printf("\n");
+
+	for (size_t i = 0; i < length; i++)
+	{
+		delete[] strNum[i];
+	}
+	delete[] strNum;
+};

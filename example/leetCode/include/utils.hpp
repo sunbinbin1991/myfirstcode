@@ -1,4 +1,10 @@
 //#include"typedef.h"
+
+//for 45:
+static const int g_max_num_len = 10;
+char * g_strcombine1 = new char[g_max_num_len * 2 + 1];
+char * g_strcombine2 = new char[g_max_num_len * 2 + 1];
+
 void printfNum(int num) {
 	printf("%d\t", num);
 }
@@ -273,10 +279,7 @@ int numofone(char * pStr) {
 	int numotherDig = first * (len - 1)*PowerBase10(len - 1);
 	int numRecur = numofone(pStr + 1);
 	return numfirstdigit + numotherDig + numRecur;
-
-
-
-
+	
 }
 
 int countOfInteger(int digit) {
@@ -303,3 +306,12 @@ int digAtIndex2(int index,int dig) {
 	return number % 10;
 }
 
+int compare(const void* strNum1, const void* strNum2) {
+	strcpy(g_strcombine1, *(const char**)strNum1);
+	strcat(g_strcombine1,*(const char**)strNum2);
+
+	strcpy(g_strcombine2, *(const char**)strNum2);
+	strcat(g_strcombine2, *(const char**)strNum1);
+
+	return strcmp(g_strcombine1,g_strcombine2);
+}

@@ -255,7 +255,9 @@ void test_getcurrentMax() {
 
 void test_digitAtIndex() {
 	char* num = "1234567891011121314151617181920";
-	base alg;	
+	base alg;
+	alg.digAtIndex(10);
+
 }
 
 void test_unsignchar() {
@@ -268,6 +270,11 @@ void test_unsignchar() {
 	std::cout << B << std::endl;
 }
 
+void test_printMinNum() {
+	int arry[4] = { 12,34,25,56 };
+	base alg;
+	alg.printMinNumber(arry, 4);
+};
 
 int main(){
 	printf("*******************\n");
@@ -290,7 +297,9 @@ int main(){
 	//test_getTopKBig();
 	//test_getcurrentMax();	
 	//test_digitAtIndex();
-	test_unsignchar();
+	//test_unsignchar();
+
+	test_printMinNum();
 
 	printf("\n");
 	system("pause");
