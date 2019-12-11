@@ -276,6 +276,23 @@ void test_printMinNum() {
 	alg.printMinNumber(arry, 4);
 };
 
+struct box {
+	int x1;
+	int x2;
+	int center;
+	box()
+		:
+		center( (x1 + x2) >> 1) {}
+};
+
+void test_struct() {
+	box bb;
+	bb.x1 = 2;
+	bb.x2 = 5;
+
+	printf("bb.center %d \n", bb.center);
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -298,8 +315,9 @@ int main(){
 	//test_getcurrentMax();	
 	//test_digitAtIndex();
 	//test_unsignchar();
+	//test_printMinNum();
 
-	test_printMinNum();
+	test_struct();
 
 	printf("\n");
 	system("pause");
