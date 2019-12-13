@@ -19,6 +19,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 
 * 小时候的梦想是成为一个有用的人，成为一个科学家，走了太久，已经忘了儿时的梦想，毕竟那时候还不懂事。
 
+* 如何完成一个小目标,走着走着不能就忘了自己要干啥了啊!!!!
+
 ---
 
 * ps：coding never stop!!
