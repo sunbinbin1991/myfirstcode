@@ -21,6 +21,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 
 * 如何完成一个小目标,走着走着不能就忘了自己要干啥了啊!!!!
 
+* 如果做什么事情不开心,那最好停下来,做些开心的事,再来搞麻烦的事情.
+
 ---
 
 * ps：coding never stop!!
