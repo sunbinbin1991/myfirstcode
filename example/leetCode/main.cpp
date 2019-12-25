@@ -502,6 +502,11 @@ int test_string()
 	printf("%s\n", myString());
 	return 0;
 }
+void test_3change(){
+	base alg;
+	int num = alg.changeBottle3(81);
+	printf("num = %d\n", num);
+}
 
 int main(){
 	printf("*******************\n");
@@ -536,8 +541,9 @@ int main(){
 	//test_virual();
 	//test_modify();
 	test_string();
-
 	printf("sizeof ct= %d\n", sizeof(CTest));
+	test_3change();
+	
 	printf("\n");
 	system("pause");
 	return -1;

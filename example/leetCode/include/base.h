@@ -131,8 +131,8 @@ public:
 	Offer-45: combine array to min val
 	*/
 	void printMinNumber(int* number, int length);
-
-
+	
+	int changeBottle3(int num);
 private:
 	
 	
