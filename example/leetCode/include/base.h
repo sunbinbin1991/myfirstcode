@@ -133,6 +133,7 @@ public:
 	void printMinNumber(int* number, int length);
 
 
+	int changeBottle3(int num);
 private:
 	
 	

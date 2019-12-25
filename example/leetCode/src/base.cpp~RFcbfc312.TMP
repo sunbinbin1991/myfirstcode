@@ -473,21 +473,3 @@ void base::printMinNumber(int* number, int length) {
 	}
 	delete[] strNum;
 };
-
-int base::changeBottle3(int num) {
-	printf("hello num=%d\n", num);
-	int res = 0;
-	if (num <= 1) {
-		return res;
-	}
-	if (num == 2) {
-		printf("num == 2%d", res++);
-		return res;
-	}
-	int total_res = 0;
-	res = num /  3;
-	total_res = num % 3;
-	total_res += res;
-	printf("res=%d, total = %d\n",res, total_res);
-	return res+changeBottle3(total_res);
-};

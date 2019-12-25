@@ -22,8 +22,8 @@ set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-FIND_PACKAGE(OpenCV)
+#FIND_PACKAGE(OpenCV)
 
 add_subdirectory(example/leetCode)
-add_subdirectory(example/threadpool)
+#add_subdirectory(example/threadpool)
      

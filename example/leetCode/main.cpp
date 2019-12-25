@@ -293,6 +293,12 @@ void test_struct() {
 	printf("bb.center %d \n", bb.center);
 }
 
+void test_3change(){
+	base alg;
+	int num = alg.changeBottle3(81);
+	printf("num = %d\n", num);
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -316,9 +322,9 @@ int main(){
 	//test_digitAtIndex();
 	//test_unsignchar();
 	//test_printMinNum();
+	//test_struct();
 
-	test_struct();
-
+	test_3change();
 	printf("\n");
 	system("pause");
 	return -1;
