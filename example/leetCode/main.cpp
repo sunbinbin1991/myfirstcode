@@ -293,6 +293,216 @@ void test_struct() {
 	printf("bb.center %d \n", bb.center);
 }
 
+enum stringTT{
+	x1,
+	x2,
+	x3,
+	x4=10,
+}x;
+
+void test_enum(){
+	printf("x = %d", x);
+}
+
+void test_unsigned() {
+	unsigned char *p1;
+	unsigned long *p2;
+	p1 = (unsigned char *)0x801000;
+	p2 = (unsigned long *)0x810000;
+	printf("p1 = %d\n", p1 += 5);
+	printf("p2 = %d\n", p2 += 5);
+}
+
+void example(char acWelcome[]) {
+	printf("%d", sizeof(acWelcome));
+	return;
+}
+void test_char_array() {
+	char acWelcome[] = "Welcome to Huawei Test";
+	example(acWelcome);
+	return;
+}
+
+void test_pointer() {
+	char str[] = "glad to test something";
+	char *p = str;
+	p++;
+	int *p1 = reinterpret_cast<int *>(p);
+	p1++;
+	p = reinterpret_cast<char *>(p1);
+	printf("result is %s\n", p);
+}
+
+
+void test_char_array2() {
+	char str[] = "Hello";
+	printf("%d\n", sizeof(str));
+	printf("%d\n", strlen(str));
+	char*p = str;
+	printf("%d\n", sizeof(p));
+	example(str);
+	return;
+}
+
+//class A {
+//public:
+//	~A() { printf("A"); }
+//};
+
+//class B {
+//public:
+//	~B() { printf("B"); }
+//};
+
+class C {
+public:
+	~C() { printf("C"); }
+};
+
+class D {
+public:
+	~D() { printf("D"); }
+};
+
+
+C c;
+void test_destroy()
+{
+	//A*pa = new A();
+	//B b;
+	static D d;
+	//delete pa;
+}
+
+class CTest
+{
+public:
+public:
+	CTest() :m_chData('\0'), m_nData(0)
+	{
+	}
+	virtual void mem_fun() {}
+private:
+	char m_chData;
+	int m_nData;
+	//static char s_chData;
+};
+
+class A
+{
+public:
+	void FuncA()
+	{
+		printf("FuncA called\n");
+	}
+	virtual void FuncB()
+	{
+		printf("FuncB called\n");
+	}
+};
+class B : public A
+{
+public:
+	void FuncA()
+	{
+		A::FuncA();
+		printf("FuncAB called\n");
+	}
+	virtual void FuncB()
+	{
+		printf("FuncBB called\n");
+	}
+};
+
+void test_virual() {
+	B  b;
+	A  *pa;
+	pa = &b;
+	A *pa2 = new A;
+	pa->FuncA(); 
+	pa->FuncB(); 
+	pa2->FuncA(); 
+	pa2->FuncB();
+	delete pa2;
+}
+
+int FindSubString(char* pch)
+{
+	int   count = 0;
+	char  * p1 = pch;
+	while (*p1 != '\0')
+	{
+		if (*p1 == p1[1] - 1)
+		{
+			p1++;
+			count++;
+		}
+		else {
+			break;
+		}
+	}
+	int count2 = count;
+	while (*p1 != '\0')
+	{
+		if (*p1 == p1[1] + 1)
+		{
+			p1++;
+			count2--;
+		}
+		else {
+			break;
+		}
+	}
+	if (count2 == 0)
+		return(count);
+	return(0);
+}
+void ModifyString(char* pText)
+{
+	char  * p1 = pText;
+	char  * p2 = p1;
+	while (*p1 != '\0')
+	{
+		int count = FindSubString(p1);
+		if (count > 0)
+		{
+			*p2++ = *p1;
+			sprintf(p2, "%i", count);
+			while (*p2 != '\0')
+			{
+				p2++;
+			}
+			p1 += count + count + 1;
+		}
+		else {
+			*p2++ = *p1++;
+		}
+	}
+}
+
+void test_modify() {
+	char text[32] = "XYBCDCBABABA";
+	ModifyString(text);
+	printf(text);
+}
+
+char *myString()
+{
+	char buffer[6] = { 0 };
+	char *s = "Hello World!";
+	for (int i = 0; i < sizeof(buffer) - 1; i++)
+	{
+		buffer[i] = *(s + i);
+	}
+	return buffer;
+}
+
+int test_string()
+{
+	printf("%s\n", myString());
+	return 0;
+}
+
 int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
@@ -316,9 +526,18 @@ int main(){
 	//test_digitAtIndex();
 	//test_unsignchar();
 	//test_printMinNum();
+	//test_struct();
+	//test_enum();
+	//test_unsigned();	
+	//test_char_array();	
+	//test_char_array2();	
+	//test_pointer();
+	//test_destroy();
+	//test_virual();
+	//test_modify();
+	test_string();
 
-	test_struct();
-
+	printf("sizeof ct= %d\n", sizeof(CTest));
 	printf("\n");
 	system("pause");
 	return -1;
