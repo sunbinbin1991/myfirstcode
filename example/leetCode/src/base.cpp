@@ -474,6 +474,8 @@ void base::printMinNumber(int* number, int length) {
 	delete[] strNum;
 };
 
+
+
 int base::changeBottle3(int num) {
 	printf("hello num=%d\n", num);
 	int res = 0;

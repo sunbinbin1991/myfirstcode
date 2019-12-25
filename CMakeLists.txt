@@ -25,5 +25,6 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 #FIND_PACKAGE(OpenCV)
 
 add_subdirectory(example/leetCode)
+add_subdirectory(example/huawei)
 #add_subdirectory(example/threadpool)
      
