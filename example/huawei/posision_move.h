@@ -58,18 +58,3 @@ void test_move() {
 	move_position(case_string.c_str());
 }
 
-
-//1£º for num
-//int num;
-//while (cin >> num)
-//{
-//	if (num == 0) return 0;
-//	int res = changeBottle3(num);
-//	cout << res << endl;
-//}
-//return 0;
-
-//2:for string
-//string str;
-//while (cin >> str) {
-//}
