@@ -23,6 +23,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 
 * 如果做什么事情不开心,那最好停下来,做些开心的事,再来搞麻烦的事情.
 
+* 如果你厌恶你的生活，那就付出十倍百倍的努力来改变的下一步的生活吧
+
 ---
 
 * ps：coding never stop!!
