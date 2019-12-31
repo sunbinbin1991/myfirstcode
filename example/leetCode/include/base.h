@@ -132,7 +132,16 @@ public:
 	*/
 	void printMinNumber(int* number, int length);
 	
+	/*
+	coding-1:三个空瓶换一瓶水,10瓶水,可以最终喝多少瓶
+	*/
 	int changeBottle3(int num);
+
+	/*
+	coding-2:判断给定的链表中是否有环
+	*/
+	bool hasCircle(ListNode *head);
+
 private:
 	
 	

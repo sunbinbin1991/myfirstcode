@@ -474,8 +474,6 @@ void base::printMinNumber(int* number, int length) {
 	delete[] strNum;
 };
 
-
-
 int base::changeBottle3(int num) {
 	printf("hello num=%d\n", num);
 	int res = 0;
@@ -493,3 +491,16 @@ int base::changeBottle3(int num) {
 	printf("res=%d, total = %d\n",res, total_res);
 	return res+changeBottle3(total_res);
 };
+
+bool base::hasCircle(ListNode *head) {
+	ListNode *firstNode = head;
+	ListNode *secondNode = head;
+	if(firstNode->next != nullptr&&secondNode->next != nullptr) {
+		firstNode = firstNode->next;
+		secondNode = secondNode->next->next;
+		if(firstNode == secondNode) {
+			return true;
+		}
+	}
+	return false;
+}
