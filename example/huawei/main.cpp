@@ -6,13 +6,15 @@
 #include "maxLengthofString.h"
 #include "alg_basic.h"
 #include "hupai.h"
+#include "splitString.h"
 
 void test_case() {
 	//test_lowprice();
 	//test_move();
 	//test_len_of_string();
 	//bubblesort();
-	test_hupai();
+	//test_hupai();
+	test_splitstring();
 }
 
 
