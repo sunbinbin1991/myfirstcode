@@ -9,6 +9,7 @@
 #include "splitString.h"
 #include "hex2binary.h"
 #include "primerfactor.h"
+#include "sortkeyvalue.h"
 
 void test_case() {
 	//test_lowprice();
@@ -18,8 +19,11 @@ void test_case() {
 	//test_hupai();
 	//test_splitstring();	
 	//test_hex2binary();
-	
-	test_primerfactor();
+	//test_primerfactor();
+
+	test_sort_key_value();
+
+
 }
 
 

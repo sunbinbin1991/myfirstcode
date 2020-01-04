@@ -7,7 +7,7 @@ void getprimefactor(int num) {
 	int i = 2;
 	while (num >= 2) {
 		if (num % i == 0) {
-			cout << i << endl;
+			cout<<i<<endl;
 			while (num%i == 0) {
 				num /= i;
 			}
