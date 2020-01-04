@@ -10,7 +10,7 @@
 #include "hex2binary.h"
 #include "primerfactor.h"
 #include "sortkeyvalue.h"
-
+#include "integerdelduplicate.h"
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -20,9 +20,9 @@ void test_case() {
 	//test_splitstring();	
 	//test_hex2binary();
 	//test_primerfactor();
+	//test_sort_key_value();
 
-	test_sort_key_value();
-
+	test_integerdelduplicate();
 
 }
 
