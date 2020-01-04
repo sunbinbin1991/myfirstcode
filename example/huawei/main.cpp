@@ -8,6 +8,7 @@
 #include "hupai.h"
 #include "splitString.h"
 #include "hex2binary.h"
+#include "primerfactor.h"
 
 void test_case() {
 	//test_lowprice();
@@ -15,9 +16,10 @@ void test_case() {
 	//test_len_of_string();
 	//bubblesort();
 	//test_hupai();
-	//test_splitstring();
+	//test_splitstring();	
+	//test_hex2binary();
 	
-	test_hex2binary();
+	test_primerfactor();
 }
 
 
