@@ -11,6 +11,7 @@
 #include "primerfactor.h"
 #include "sortkeyvalue.h"
 #include "integerdelduplicate.h"
+#include "sortstringbydict.h"
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -21,8 +22,12 @@ void test_case() {
 	//test_hex2binary();
 	//test_primerfactor();
 	//test_sort_key_value();
+	//test_integerdelduplicate();
+	//test_getallacellnums();
+	//test_getInversesentence();
+	//test_string_compare();
 
-	test_integerdelduplicate();
+	sort_string_by_dict();
 
 }
 
