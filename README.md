@@ -29,6 +29,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 
 * 改变是痛苦的,不改变只是将痛苦延后,不能坐等别人让你来改变,那样迟早药丸!
 
+* 我们有时候努力奋斗,不是为了改变世界,只是为了不被这个世界改变
+
 ---
 
 * ps：coding never stop!!
