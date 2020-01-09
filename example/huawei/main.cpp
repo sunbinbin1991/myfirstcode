@@ -12,6 +12,7 @@
 #include "sortkeyvalue.h"
 #include "integerdelduplicate.h"
 #include "sortstringbydict.h"
+#include "ipinfojudge.h"
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -26,8 +27,9 @@ void test_case() {
 	//test_getallacellnums();
 	//test_getInversesentence();
 	//test_string_compare();
+	//sort_string_by_dict();
 
-	sort_string_by_dict();
+	test_ip_illegal();
 
 }
 
