@@ -13,6 +13,7 @@
 #include "integerdelduplicate.h"
 #include "sortstringbydict.h"
 #include "ipinfojudge.h"
+#include "getCubeRoot.h"
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -28,9 +29,9 @@ void test_case() {
 	//test_getInversesentence();
 	//test_string_compare();
 	//sort_string_by_dict();
+	//test_ip_illegal();
 
-	test_ip_illegal();
-
+	test_getCubeRoot();
 }
 
 
