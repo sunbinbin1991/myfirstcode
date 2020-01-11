@@ -31,6 +31,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 
 * 我们有时候努力奋斗,不是为了改变世界,只是为了不被这个世界改变
 
+* 每一个不曾起舞的日子,都是对生命的辜负!!!
+
 ---
 
 * ps：coding never stop!!
