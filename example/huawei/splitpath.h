@@ -72,8 +72,6 @@ void test_splitpath() {
 	}
 }
 
-链接：https://www.nowcoder.com/questionTerminal/2baa6aba39214d6ea91a2e03dff3fbeb?f=discussion
-来源：牛客网
 
 #include <iostream>
 #include <string>
