@@ -15,6 +15,7 @@
 #include "ipinfojudge.h"
 #include "getCubeRoot.h"
 #include "splitpath.h"
+#include "checkpassword.h"
 
 void test_case() {
 	//test_lowprice();
@@ -33,8 +34,9 @@ void test_case() {
 	//sort_string_by_dict();
 	//test_ip_illegal();
 	//test_getCubeRoot();
+	//test_splitpath();
 
-	test_splitpath();
+
 }
 
 
