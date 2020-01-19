@@ -16,6 +16,7 @@
 #include "getCubeRoot.h"
 #include "splitpath.h"
 #include "checkpassword.h"
+#include "simple_encry.h"
 
 void test_case() {
 	//test_lowprice();
@@ -36,7 +37,7 @@ void test_case() {
 	//test_getCubeRoot();
 	//test_splitpath();
 
-
+	test_decry();
 }
 
 
