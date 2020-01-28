@@ -36,16 +36,26 @@ void test_case() {
 	//test_ip_illegal();
 	//test_getCubeRoot();
 	//test_splitpath();
+	//test_decry();
 
-	test_decry();
 }
 
+
+void test_basic() {
+	char ptr_A[] = "greet";
+	char *ptr_B = "greet";
+	const char *ptr_C = "greeter";
+	char * const ptr_D = "greeter";//ptr_d data could not change!
+	const char * const ptr_E = "greeter";
+	ptr_C = "D";
+	//ptr_D = "H";//error when build;
+}
 
 int main()
 {
     printf("hello world\n");
 
-	test_case();
+	//test_case();
 	system("pause");
 	return 0;
 }
