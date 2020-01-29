@@ -16,6 +16,7 @@
 #include "getCubeRoot.h"
 #include "splitpath.h"
 #include "checkpassword.h"
+#include "data_classiffier.h"
 #include "simple_encry.h"
 
 void test_case() {
@@ -37,7 +38,7 @@ void test_case() {
 	//test_getCubeRoot();
 	//test_splitpath();
 	//test_decry();
-
+	test_data_classify();
 }
 
 
@@ -55,7 +56,7 @@ int main()
 {
     printf("hello world\n");
 
-	//test_case();
+	test_case();
 	system("pause");
 	return 0;
 }
