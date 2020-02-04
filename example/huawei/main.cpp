@@ -18,7 +18,7 @@
 #include "checkpassword.h"
 #include "data_classiffier.h"
 #include "simple_encry.h"
-
+#include "string_sort_by_rule.h"
 void test_case() {
 	//test_lowprice();
 	//test_move();
