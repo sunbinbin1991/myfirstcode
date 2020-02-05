@@ -3,13 +3,13 @@
 #include<vector>
 using namespace std;
 
-void test_case() {
+void test_case2() {
 	string str;
 	while (cin >> str) {
 		vector<char> res;
 		for (int j = 0; j < 26; j++)
 		{
-			for (int i = 0; i < str.length; i++)
+			for (int i = 0; i < str.length(); i++)
 			{
 				if ((str.at(i) - 'a') == j||(str.at(i) - 'A') == j){
 					res.push_back(str.at(i));

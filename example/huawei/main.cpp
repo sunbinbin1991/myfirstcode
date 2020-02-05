@@ -19,6 +19,8 @@
 #include "data_classiffier.h"
 #include "simple_encry.h"
 #include "string_sort_by_rule.h"
+#include "../effective c++/test_basic.h"
+
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -42,21 +44,13 @@ void test_case() {
 }
 
 
-void test_basic() {
-	char ptr_A[] = "greet";
-	char *ptr_B = "greet";
-	const char *ptr_C = "greeter";
-	char * const ptr_D = "greeter";//ptr_d data could not change!
-	const char * const ptr_E = "greeter";
-	ptr_C = "D";
-	//ptr_D = "H";//error when build;
-}
 
 int main()
 {
     printf("hello world\n");
 
-	test_case();
+	//test_case();
+	test_basic();
 	system("pause");
 	return 0;
 }
