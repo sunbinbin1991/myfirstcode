@@ -50,6 +50,9 @@ void test_string() {
 	char * const ptr_D = "greeter";//ptr_d data could not change!
 	const char * const ptr_E = "greeter";
 	ptr_C = "D";
+	char *const name = new char[5];
+	char a = '\82';
+	name[3] = char('q');
 	//ptr_D = "H";//error when build;
 }
 
@@ -67,11 +70,72 @@ void test_struct() {
 	int sz = sizeof(Thunder);
 	printf("sz = %d\n", sz);
 }
+
+using namespace std;
+vector<int>g[10];
+int ans = 0;
+void dfs(int x) {
+	if (g[x].size() == 0) {
+		ans++;
+		return;
+	}
+	for (int i = 0; i < g[x].size(); ++i) {
+		dfs(g[x][i]);
+	}
+}
+int test_vector() {
+	int n, x;
+	scanf("%d", &n);
+	for (int i = 2; i <= n; ++i) {
+		scanf("%d", &x);
+		g[x].push_back(i);
+	}
+	
+	dfs(1);
+	cout << ans << endl;
+	return 0;
+}
+
+char* getMem(void) {
+	char p[] = "tt";
+	p[5] = 0x0;
+	return p;
+}
+void test(void) {
+	char *s = 0x0;
+	s = getMem();
+	printf(s);
+}
+
 int test_basic()
 {
 	//int a;
 	//show(multi, 10, &a);
 
-	test_struct();
+	//test_struct();
+
+	//char a[] = "xyz";
+	//char  b[] = { 'x','y','z' };
+
+	//printf("%d %d \n", sizeof(a), sizeof(b));
+
+	/*int i, j, m = 6, n = 4, *p = &n, *q = &m;
+
+	i = p == &m;
+	j = (-*p) / (*q) + 7;
+
+	printf("i=%d,j=%d\n", i, j);*/
+
+//	test_vector();
+
+	//test();
+	short si = -32767;
+	unsigned short usi = si;
+	char msg[20];
+	sprintf(msg, "tt = %d ff%f", 1, 1);
+	printf("%s\n", msg);
+	int s = 100;
+	printf("%d\n", 100>>1);
+	//printf("end\n");
 	return 0;
 }

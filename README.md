@@ -36,6 +36,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 大多数人都高估了他们一天能做的事情，但低估了他们一年能做的事情
 
 * 平静的湖面练不出精悍的水手
+
+* 攀上顶峰需要很久,而堕入深渊只需一瞬
 ---
 
 * ps：coding never stop!!

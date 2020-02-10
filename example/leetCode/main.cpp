@@ -400,6 +400,7 @@ public:
 		printf("FuncB called\n");
 	}
 };
+
 class B : public A
 {
 public:
@@ -512,39 +513,13 @@ int main(){
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
-	//test_string_pattern();
-	//test_printToMaxOfNDigits();
-	//test_delListNode();
-	//test_isNumString();
-	//test_recordeeOldEven();
-	//test_printMatrixClockwisely();
-	//test_minStack();
-	//test_isStackOrder();
-	//test_printBinaryTreeFromTopToBottom();
-	//test_printBinaryTreeFromLeftToRight();
-	//test_printBinaryTreeZway();
-	//test_findPath();
-	//test_pematation();
-	//test_halfInArray();
-	//test_getTopKBig();
-	//test_getcurrentMax();	
-	//test_digitAtIndex();
-	//test_unsignchar();
-	//test_printMinNum();
-	//test_struct();
-	//test_enum();
-	//test_unsigned();	
-	//test_char_array();	
-	//test_char_array2();	
-	//test_pointer();
-	//test_destroy();
-	//test_virual();
-	//test_modify();
 	test_string();
 	printf("sizeof ct= %d\n", sizeof(CTest));
 	test_3change();
 	
 	printf("\n");
 	system("pause");
+	vector<int> tt[20];
+	printf("size = %d", tt[10].size());
 	return -1;
 }
