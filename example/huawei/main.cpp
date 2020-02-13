@@ -43,8 +43,6 @@ void test_case() {
 	test_data_classify();
 }
 
-
-
 int main()
 {
     printf("hello world\n");
