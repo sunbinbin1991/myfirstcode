@@ -20,6 +20,7 @@
 #include "simple_encry.h"
 #include "string_sort_by_rule.h"
 #include "../effective c++/test_basic.h"
+#include "combineTwoStringByRule.h"
 
 void test_case() {
 	//test_lowprice();
@@ -40,15 +41,16 @@ void test_case() {
 	//test_getCubeRoot();
 	//test_splitpath();
 	//test_decry();
-	test_data_classify();
+	//test_data_classify();
+	test_combineTwoStringByRule();
 }
 
 int main()
 {
     printf("hello world\n");
 
-	//test_case();
-	test_basic();
+	test_case();
+	//test_basic();
 	system("pause");
 	return 0;
 }
