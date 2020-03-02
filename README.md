@@ -40,6 +40,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 攀上顶峰需要很久,而堕入深渊只需一瞬
 
 * 人们常觉得准备的阶段是在浪费时间，只有当真正机会来临，而自己没有能力把握的时候，才能觉悟自己平时没有准备才是浪费了时间
+
+* 每个人都会死去，但并非每个人都活过（Everyone will die，but not everyone lives！）
 ---
 
 * ps：coding never stop!!
