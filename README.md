@@ -40,6 +40,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 攀上顶峰需要很久,而堕入深渊只需一瞬
 
 * 人们常觉得准备的阶段是在浪费时间，只有当真正机会来临，而自己没有能力把握的时候，才能觉悟自己平时没有准备才是浪费了时间
+
+* 当你决定是否要做某事的时候，请问自己：“我是否只是因为人们对我的看法而考虑不这样做？”，如果答案是肯定的，那就去做。
 ---
 
 * ps：coding never stop!!
