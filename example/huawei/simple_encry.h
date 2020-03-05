@@ -75,4 +75,5 @@ void test_decry() {
 	string out;
 	//cin >> input;
 	decry(input, out);
+	char* p = new char[10];
 }
