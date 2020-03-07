@@ -23,6 +23,7 @@
 #include "combineTwoStringByRule.h"
 #include "manacher.h"
 #include "ipJudge.h"
+#include "sortLetterbyAscll.h"
 
 void test_case() {
 	//test_lowprice();
@@ -46,7 +47,9 @@ void test_case() {
 	//test_data_classify();
 	//test_combineTwoStringByRule();
 	//test_manacher();
-	test_ipnumchange();
+	//test_ipnumchange();
+	//test_ipnumchange_better();
+	test_sort_letter_by_Ascll();
 }
 
 int main()

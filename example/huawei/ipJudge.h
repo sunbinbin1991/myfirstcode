@@ -39,13 +39,12 @@ int bin2num(stack<int> bin) {
 void test_ipnumchange() {
 	
 	int input_num[4];
-	//scanf("%d.%d.%d.%d", &input_num[0], &input_num[1], &input_num[2], &input_num[3]);
 	scanf("%d", &input_num[0]);
 	stack<int> bin = num2binary(input_num[0]);
 	bin2num(bin);
 }
 
-int test_main()
+int test_ipnumchange_better()
 {
 	unsigned int a, b, c, d;
 	char ch;
