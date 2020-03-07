@@ -21,6 +21,8 @@
 #include "string_sort_by_rule.h"
 #include "../effective c++/test_basic.h"
 #include "combineTwoStringByRule.h"
+#include "manacher.h"
+#include "ipJudge.h"
 
 void test_case() {
 	//test_lowprice();
@@ -42,7 +44,9 @@ void test_case() {
 	//test_splitpath();
 	//test_decry();
 	//test_data_classify();
-	test_combineTwoStringByRule();
+	//test_combineTwoStringByRule();
+	//test_manacher();
+	test_ipnumchange();
 }
 
 int main()
