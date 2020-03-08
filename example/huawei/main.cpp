@@ -24,6 +24,7 @@
 #include "manacher.h"
 #include "ipJudge.h"
 #include "sortLetterbyAscll.h"
+#include "snakeMatrix.h"
 
 void test_case() {
 	//test_lowprice();
@@ -49,7 +50,8 @@ void test_case() {
 	//test_manacher();
 	//test_ipnumchange();
 	//test_ipnumchange_better();
-	test_sort_letter_by_Ascll();
+	//test_sort_letter_by_Ascll();
+	test_snake_matrix();
 }
 
 int main()
