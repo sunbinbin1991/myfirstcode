@@ -28,6 +28,7 @@
 #include "encryString.h"
 #include "fbnaci.h"
 #include "fama.h"
+#include "num2EnglishWords.h"
 
 void test_case() {
 	//test_lowprice();
@@ -57,7 +58,8 @@ void test_case() {
 	//test_snake_matrix();
 	//test_encryString();
 	//test_fbnaci();
-	test_fama();
+	//test_fama();
+	test_num2english();
 }
 
 int main()
