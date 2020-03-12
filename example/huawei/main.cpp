@@ -27,6 +27,7 @@
 #include "snakeMatrix.h"
 #include "encryString.h"
 #include "fbnaci.h"
+#include "fama.h"
 
 void test_case() {
 	//test_lowprice();
@@ -55,7 +56,8 @@ void test_case() {
 	//test_sort_letter_by_Ascll();
 	//test_snake_matrix();
 	//test_encryString();
-	test_fbnaci();
+	//test_fbnaci();
+	test_fama();
 }
 
 int main()
