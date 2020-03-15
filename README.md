@@ -44,6 +44,10 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 当你决定是否要做某事的时候，请问自己：“我是否只是因为人们对我的看法而考虑不这样做？”，如果答案是肯定的，那就去做。
 
 * 每个人都会死去，但并非每个人都活过（Everyone will die，but not everyone lives！）
+
+* 如果知道自己在一个月后将会死去,那么这个时候,你会改变当前的生活方式么!
+
+
 ---
 
 * ps：coding never stop!!
