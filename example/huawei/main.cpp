@@ -29,6 +29,7 @@
 #include "fbnaci.h"
 #include "fama.h"
 #include "num2EnglishWords.h"
+#include "beatyofNum.h"
 
 void test_case() {
 	//test_lowprice();
@@ -59,7 +60,8 @@ void test_case() {
 	//test_encryString();
 	//test_fbnaci();
 	//test_fama();
-	test_num2english();
+	//test_num2english();
+	test_name_of_beauty();
 }
 
 int main()
