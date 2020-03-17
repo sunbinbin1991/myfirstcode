@@ -30,6 +30,7 @@
 #include "fama.h"
 #include "num2EnglishWords.h"
 #include "beatyofNum.h"
+#include "splitStringByNums.h"
 
 void test_case() {
 	//test_lowprice();
@@ -61,7 +62,8 @@ void test_case() {
 	//test_fbnaci();
 	//test_fama();
 	//test_num2english();
-	test_name_of_beauty();
+	//test_name_of_beauty();
+	test_split_str_by_nums();
 }
 
 int main()
