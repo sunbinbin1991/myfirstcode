@@ -1,6 +1,29 @@
 #include "string"
 #include "iostream"
 using namespace std;
+/*回溯模板
+int check(参数)
+{
+	if(满足条件)
+		return 1;
+	return 0;
+}
+
+void dfs(int step)
+{
+	判断边界
+	{
+		相应操作
+	}
+	尝试每一种可能
+	{
+		满足check条件
+		标记
+		继续下一步dfs(step+1)
+		恢复初始状态（回溯的时候要用到）
+	}
+}
+*/
 bool canSuccess(const string &s) {
 	if (s.length() < 2 || s.length() >= 15) return false;
 	if (s.length() == 2) return s[0] == s[1];

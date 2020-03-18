@@ -31,6 +31,7 @@
 #include "num2EnglishWords.h"
 #include "beatyofNum.h"
 #include "splitStringByNums.h"
+#include "mlti_threads.h"
 
 void test_case() {
 	//test_lowprice();
@@ -63,7 +64,8 @@ void test_case() {
 	//test_fama();
 	//test_num2english();
 	//test_name_of_beauty();
-	test_split_str_by_nums();
+	//test_split_str_by_nums();
+	test_mlti_threads();
 }
 
 int main()
