@@ -69,7 +69,7 @@ void test_case() {
 	//test_split_str_by_nums();
 	//test_mlti_threads();
 	//test_calstringdistance();
-	test_maxIncreaseOrder();
+	test_maxContinuousIncreaseOrder();
 }
 
 int main()

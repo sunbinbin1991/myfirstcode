@@ -6,43 +6,37 @@
 #include<algorithm>
 #include<cmath>
 using namespace std;
-void get_maxIncreaseOrder(const std::vector<int>& nums) {
-	int max_num = 1;
+void get_maxContinuousIncreaseOrder(const std::vector<int>& nums) {
+	int count = 1;
 	std::vector<int> target(nums.size());
 	target[0] = 1;
 	for (size_t i = 0; i < nums.size(); i++)
 	{
 		printf("nums = %d\n", nums[i]);
 	}
-	for (size_t i = 1; i < nums.size(); i++)
+	int max = -1;
+	for (size_t i = 0; i < nums.size()-1; i++)
 	{
-		for (size_t j = 0; j < i; j++)
-		{
-			target[i] = std::max(max_num, target[j]);
-			/*if (nums[i] > nums[j-1]) {
-				target[i] = std::max(max_num, target[j]);
-			}
-			else {
-				target[i] = target[i - 1];
-			}*/
+		if (nums[i] < nums[i + 1]) {
+			count++;
 		}
-		max_num = target[i];
-		//target[i] = std::max(max_num,target[i-1]);
+		else {
+			max = std::max(count, max);
+			count = 1;
+		}
+		target[i] = std::max(count, max);;
 	}
-
-	for (size_t i = 0; i < target.size(); i++)
-	{
-		printf("tt = %d\n", target[i]);
-	}
+	max = std::max(count, max);
+	printf("max = %d\n", max);
 
 }
 
-int test_maxIncreaseOrder() {
+int test_maxContinuousIncreaseOrder() {
 	std::vector<int> nums;
 	int num;
 	while (cin >> num) {
 		nums.push_back(num);
 	}
-	get_maxIncreaseOrder(nums);
+	get_maxContinuousIncreaseOrder(nums);
 	return 0;
 }
