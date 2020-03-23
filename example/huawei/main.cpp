@@ -32,6 +32,8 @@
 #include "beatyofNum.h"
 #include "splitStringByNums.h"
 #include "mlti_threads.h"
+#include "calStringDistance.h"
+#include "maxIncreaseOrder.h"
 
 void test_case() {
 	//test_lowprice();
@@ -65,7 +67,9 @@ void test_case() {
 	//test_num2english();
 	//test_name_of_beauty();
 	//test_split_str_by_nums();
-	test_mlti_threads();
+	//test_mlti_threads();
+	//test_calstringdistance();
+	test_maxIncreaseOrder();
 }
 
 int main()
