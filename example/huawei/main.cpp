@@ -34,6 +34,7 @@
 #include "mlti_threads.h"
 #include "calStringDistance.h"
 #include "maxIncreaseOrder.h"
+#include "dp_maxProfit.h"
 
 void test_case() {
 	//test_lowprice();
@@ -69,7 +70,8 @@ void test_case() {
 	//test_split_str_by_nums();
 	//test_mlti_threads();
 	//test_calstringdistance();
-	test_maxContinuousIncreaseOrder();
+	//test_maxContinuousIncreaseOrder();
+	test_maxprofit();
 }
 
 int main()

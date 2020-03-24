@@ -39,19 +39,24 @@ void get_maxIncreaseOrder(const std::vector<int>& nums) {
 		printf("nums = %d\n", nums[i]);
 		target[i] = 1;
 	}
+	int max_num = 1;
 	for (int i = 0; i < nums.size(); i++)
 	{
-		for (int j = 0; j < i; j++) {
+		int max_num = 1;
+		for (int j = 0; j <= i; j++) {
 			if (nums[j] < nums[i]) {
 				target[i] = std::max(target[j]+1, target[i]);
 			}
-			//target[i] = std::max(target[j], target[i]);
+			max_num = std::max(max_num, target[i]);
+			printf("i= %d, j= %d £¬target = %d£¬num = %d\n",i,j, target[i],max_num);
 		}
-		printf("target = %d\n", target[i]);
+		//target[i] = max_num;
+
+		//printf("target = %d\n", target[i]);
 	}
 	for (int i = 1; i < nums.size(); i++)
 	{
-		//printf("target %d = %d\n", i,target[i]);
+		printf("target %d = %d\n", i,target[i]);
 	}
 
 }
