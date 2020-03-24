@@ -35,6 +35,7 @@
 #include "calStringDistance.h"
 #include "maxIncreaseOrder.h"
 #include "dp_maxProfit.h"
+#include "dp_minCostPath.h"
 
 void test_case() {
 	//test_lowprice();
@@ -71,7 +72,8 @@ void test_case() {
 	//test_mlti_threads();
 	//test_calstringdistance();
 	//test_maxContinuousIncreaseOrder();
-	test_maxprofit();
+	//test_maxprofit();
+	test_minCostPath();
 }
 
 int main()

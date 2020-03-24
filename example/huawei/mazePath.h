@@ -6,7 +6,7 @@ using namespace std;
 int N, M; //分别代表行和列
 vector<vector<int>> maze;//迷宫矩阵
 vector<vector<int>> path_temp;//存储当前路径，第一维表示位置
-vector<vector<int>> path_best;//存储最佳路径
+vector<vector<int>> path_best;//存储最`佳路径
 
 void MazeTrack(int i, int j)
 {
