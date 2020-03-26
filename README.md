@@ -48,6 +48,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 如果知道自己在一个月后将会死去,那么这个时候,你会改变当前的生活方式么!
 
 * 你过去20年的每一个选择决定了你现在处境，你现在做的每一个选择，决定了20年后你的处境。
+
+*  心有猛虎,细嗅蔷薇
 ---
 
 * ps：coding never stop!!
