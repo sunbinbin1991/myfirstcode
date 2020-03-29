@@ -28,7 +28,7 @@ void test_sort_key_value() {
 	
 		int first_value;
 		cin >> first_value;
-
+		
 		if (keyvalmap.find(first_key) != keyvalmap.end()){
 			keyvalmap[first_key] += first_value;
 		}

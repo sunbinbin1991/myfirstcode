@@ -1,56 +1,41 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
-int getmax(int a, int b)
-{
-	return (a>b) ? a : b;
-}
+
 int test_lowprice()
 {
-	int N, m;
-	int price[60][3] = { 0 };
-	int value[60][3] = { 0 };
-	int f[60][3200];
-	int v, p, q;
-	cin >> N >> m;
-	N /= 10;
-	for (int i = 1; i <= m; ++i)
+
+	int nlen;
+	int n2;
+	vector<int> out;
+	cin >> hex>> nlen;
+	
+	for (int i = 0; i < nlen; i++)
 	{
-		cin >> v >> p >> q;
-		v /= 10;
-		if (q == 0)
+		cin >> hex >> n2;
+		if(n2==0xA)
 		{
-			price[i][0] = v;
-			value[i][0] = v*p;
+			out.push_back(0x12);
+			out.push_back(0x34);
+		}
+		else if (n2 == 0xB)
+		{
+			out.push_back(0xab);
+			out.push_back(0xcd);
 		}
 		else
 		{
-			if (price[i][1] == 0)
-			{
-				price[i][1] = v;
-				value[i][1] = v*p;
-			}
-			if (price[i][2] == 0)
-			{
-				price[i][2] = v;
-				value[i][2] = v*p;
-			}
+			out.push_back(n2);
 		}
+
+
 	}
-	for (int i = 1; i <= m; ++i)
+	int outsize = out.size();
+	cout<<outsize<<' ';
+	for (int i = 0; i < outsize; i++)
 	{
-		for (int j = N; j>0; j--)
-		{
-			if (j >= price[i][0])
-				f[i][j] = getmax(f[i - 1][j], f[i - 1][j - price[i][0]] + value[i][0]);
-			if (j >= price[i][0] + price[i][1])
-				f[i][j] = getmax(f[i - 1][j], f[i - 1][j - price[i][0] - price[i][1]] + value[i][0] + value[i][1]);
-			if (j >= price[i][0] + price[i][2])
-				f[i][j] = getmax(f[i - 1][j], f[i - 1][j - price[i][0] - price[i][2]] + value[i][0] + value[i][2]);
-			if (j >= price[i][0] + price[i][1] + price[i][2])
-				f[i][j] = getmax(f[i - 1][j], f[i - 1][j - price[i][0] - price[i][1] - price[i][2]] + value[i][0] + value[i][1] + value[i][2]);
-		}
+		cout << out.at(i) << ' ';
 	}
-	cout << f[m][N] * 10 << endl;
 	return 0;
 }

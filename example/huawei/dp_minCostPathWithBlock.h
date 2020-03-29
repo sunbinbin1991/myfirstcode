@@ -10,8 +10,8 @@ typedef long long int ll;
 #define F(i,a,b) for(int i = (int)(a); i <= (int)(b); i++)
 #define RF(i,a,b) for(int i = (int)(a); i >= (int)(b); i--)
 #define MOD 1000000007
-int M; //assuming 10X10 matrix
-int N; //assuming 10X10 matrix
+//int M; //assuming 10X10 matrix
+//int N; //assuming 10X10 matrix
 
 int main()
 {
