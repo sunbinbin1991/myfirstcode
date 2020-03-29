@@ -20,15 +20,15 @@ void printEvenOfTriangle(int input) {
 	printf("\n");
 
 	F(i, 1, input-1) {
-		F(j, 1, 2 * i+1) {
+		F(j, 1, 2 * i-1) {
 			if (j == 1 && i==1) 
 				matrix[i][j] = matrix[i - 1][j-1];
 			else if(j == 1) // top and left
 				matrix[i][j] =  matrix[i - 1][j] + matrix[i-1][j -1];
-			//else if(j== (2 * i - 1))//top and right
-			//	matrix[i][j] = matrix[i - 1][j-1] + matrix[i - 1][j];
+			else if(j== (2 * i - 1))//top and right
+				matrix[i][j] = matrix[i - 1][j-1] + matrix[i - 1][j-2];
 			else
-			 matrix[i][j] = matrix[i - 1][j - 1] + matrix[i - 1][j] + matrix[i][j -2];
+			 matrix[i][j] = matrix[i - 1][j - 1] + matrix[i - 1][j] + matrix[i-1][j -2];
 			
 			printf("%d ",  matrix[i][j]);
 		}
