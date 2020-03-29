@@ -13,7 +13,7 @@ typedef long long int ll;
 //int M; //assuming 10X10 matrix
 //int N; //assuming 10X10 matrix
 
-int main()
+int test_dp_minpath()
 {
 	int M, N, P, _i, _j;
 
@@ -25,7 +25,7 @@ int main()
 	std::vector<std::vector<ll>> Grid(M, vector<ll>(N, 0));
 	//Note that we'll be using 1-based indexing here.
 	//initialize all paths initially as 0
-	memset(Grid.data, 0, sizeof(Grid));
+	//memset(Grid.data, 0, sizeof(Grid));
 
 	F(i, 0, P - 1)
 	{
