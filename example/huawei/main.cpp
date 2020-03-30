@@ -6,6 +6,7 @@
 #include <operateString.h>
 #include <numsOfSevenRelated.h>
 #include <isPerfectNum.h>
+#include <addStringNums.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -46,7 +47,8 @@ void test_case() {
 	//test_print_triangle();
 	//test_operateString();
 	//test_getNumsOfSenvenRelated();
-	test_isPerfactNum();
+	//test_isPerfactNum();
+	test_addStringNums();
 }
 
 int main()
