@@ -5,6 +5,7 @@
 #include <printFirstEvenOfYanghuiTriangle.h>
 #include <operateString.h>
 #include <numsOfSevenRelated.h>
+#include <isPerfectNum.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -44,7 +45,8 @@ void test_case() {
 	//test_minCostPath();
 	//test_print_triangle();
 	//test_operateString();
-	test_getNumsOfSenvenRelated();
+	//test_getNumsOfSenvenRelated();
+	test_isPerfactNum();
 }
 
 int main()
