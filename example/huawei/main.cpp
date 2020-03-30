@@ -4,6 +4,7 @@
 #include <head.h>
 #include <printFirstEvenOfYanghuiTriangle.h>
 #include <operateString.h>
+#include <numsOfSevenRelated.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -42,7 +43,8 @@ void test_case() {
 	//test_maxprofit();
 	//test_minCostPath();
 	//test_print_triangle();
-	test_operateString();
+	//test_operateString();
+	test_getNumsOfSenvenRelated();
 }
 
 int main()
