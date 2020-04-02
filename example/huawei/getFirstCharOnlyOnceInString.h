@@ -35,6 +35,30 @@ void getFirstCharOnlyOnceInString(std::string & str) {
 		}
 	}
 }
+
+int test_getFirstCharOnlyOnceInString2()
+{
+	using namespace std;
+	string str;
+	while (getline(cin, str))
+	{
+		unsigned int i;
+		for (i = 0; i<str.size(); i++)
+		{
+			//rfind: 寻找等于给定字符序列的最后子串,
+			//if position is same then return
+			if (str.find(str[i]) == str.rfind(str[i]))
+			{
+				cout << str[i] << endl;
+				break;
+			}
+		}
+		if (i == str.size())
+			cout << '.';
+	}
+	return 0;
+}
+
 int test_getFirstCharOnlyOnceInString() {
 	string inpustr;
 	while (cin >> inpustr) {

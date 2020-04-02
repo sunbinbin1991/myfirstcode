@@ -3,6 +3,7 @@
 #include <chrono>
 #include <head.h>
 #include <getFirstCharOnlyOnceInString.h>
+#include <getNearPremer.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -46,7 +47,8 @@ void test_case() {
 	//test_isPerfactNum();
 	//test_addStringNums();
 	//test_topKminNums();
-	test_getFirstCharOnlyOnceInString();
+	//test_getFirstCharOnlyOnceInString();
+	test_getNearPrimer();
 }
 
 int main()
