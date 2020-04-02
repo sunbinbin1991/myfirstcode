@@ -2,12 +2,7 @@
 #include <vector>
 #include <chrono>
 #include <head.h>
-#include <printFirstEvenOfYanghuiTriangle.h>
-#include <operateString.h>
-#include <numsOfSevenRelated.h>
-#include <isPerfectNum.h>
-#include <addStringNums.h>
-#include <topKMinNums.h>
+#include <getFirstCharOnlyOnceInString.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -50,7 +45,8 @@ void test_case() {
 	//test_getNumsOfSenvenRelated();
 	//test_isPerfactNum();
 	//test_addStringNums();
-	test_topKminNums();
+	//test_topKminNums();
+	test_getFirstCharOnlyOnceInString();
 }
 
 int main()

@@ -34,3 +34,9 @@
 #include "maxIncreaseOrder.h"
 #include "dp_maxProfit.h"
 #include "dp_minCostPath.h"
+#include <printFirstEvenOfYanghuiTriangle.h>
+#include <operateString.h>
+#include <numsOfSevenRelated.h>
+#include <isPerfectNum.h>
+#include <addStringNums.h>
+#include <topKMinNums.h>
