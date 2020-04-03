@@ -48,7 +48,7 @@ void test_case() {
 	//test_addStringNums();
 	//test_topKminNums();
 	//test_getFirstCharOnlyOnceInString();
-	test_getNearPrimer();
+	//test_getNearPrimer();
 }
 
 int main()

@@ -40,3 +40,4 @@
 #include <isPerfectNum.h>
 #include <addStringNums.h>
 #include <topKMinNums.h>
+#include <getNumsDevides.h>
