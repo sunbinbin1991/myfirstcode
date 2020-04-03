@@ -4,6 +4,7 @@
 #include <head.h>
 #include <getFirstCharOnlyOnceInString.h>
 #include <getNearPremer.h>
+#include <getNumsDevides.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -49,6 +50,7 @@ void test_case() {
 	//test_topKminNums();
 	//test_getFirstCharOnlyOnceInString();
 	//test_getNearPrimer();
+	test_getNumsDevides();
 }
 
 int main()
