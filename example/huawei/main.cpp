@@ -5,6 +5,7 @@
 #include <getFirstCharOnlyOnceInString.h>
 #include <getNearPremer.h>
 #include <getNumsDevides.h>
+#include <binaryCounts.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -50,7 +51,8 @@ void test_case() {
 	//test_topKminNums();
 	//test_getFirstCharOnlyOnceInString();
 	//test_getNearPrimer();
-	test_getNumsDevides();
+	//test_getNumsDevides();
+	test_binaryCounts();
 }
 
 int main()
