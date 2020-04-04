@@ -6,6 +6,7 @@
 #include <getNearPremer.h>
 #include <getNumsDevides.h>
 #include <binaryCounts.h>
+#include <DNAString.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -52,7 +53,8 @@ void test_case() {
 	//test_getFirstCharOnlyOnceInString();
 	//test_getNearPrimer();
 	//test_getNumsDevides();
-	test_binaryCounts();
+	//test_binaryCounts();
+	test_DNAString();
 }
 
 int main()
