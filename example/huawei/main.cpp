@@ -8,6 +8,7 @@
 #include <binaryCounts.h>
 #include <DNAString.h>
 #include <MP3Position.h>
+#include <maxCommonString.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -56,7 +57,8 @@ void test_case() {
 	//test_getNumsDevides();
 	//test_binaryCounts();
 	//test_DNAString();
-	test_getMP3Pos();
+	//test_getMP3Pos();
+	test_maxCommonString();
 }
 
 int main()
