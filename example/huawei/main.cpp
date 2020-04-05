@@ -7,6 +7,7 @@
 #include <getNumsDevides.h>
 #include <binaryCounts.h>
 #include <DNAString.h>
+#include <MP3Position.h>
 void test_case() {
 	//test_lowprice();
 	//test_move();
@@ -54,7 +55,8 @@ void test_case() {
 	//test_getNearPrimer();
 	//test_getNumsDevides();
 	//test_binaryCounts();
-	test_DNAString();
+	//test_DNAString();
+	test_getMP3Pos();
 }
 
 int main()

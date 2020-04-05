@@ -15,7 +15,7 @@ int countGCNum(const char *input, int num) {
 	}
 	return cnt;
 }
-
+//str.substr()
 string getMaxSubString(string& input,int stringlen,int num) {
 	string res;
 	int MaxNum = -1;
