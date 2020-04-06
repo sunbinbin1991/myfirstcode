@@ -41,3 +41,10 @@
 #include <addStringNums.h>
 #include <topKMinNums.h>
 #include <getNumsDevides.h>
+#include <getFirstCharOnlyOnceInString.h>
+#include <getNearPremer.h>
+#include <getNumsDevides.h>
+#include <binaryCounts.h>
+#include <DNAString.h>
+#include <MP3Position.h>
+#include <maxCommonString.h>

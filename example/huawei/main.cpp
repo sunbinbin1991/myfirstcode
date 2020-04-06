@@ -2,14 +2,12 @@
 #include <vector>
 #include <chrono>
 #include <head.h>
-#include <getFirstCharOnlyOnceInString.h>
-#include <getNearPremer.h>
-#include <getNumsDevides.h>
-#include <binaryCounts.h>
-#include <DNAString.h>
-#include <MP3Position.h>
-#include <maxCommonString.h>
+#include <matchString.h>
 void test_case() {
+	test_matchstring();
+}
+
+void test_case_1() {
 	//test_lowprice();
 	//test_move();
 	//test_len_of_string();
@@ -58,7 +56,7 @@ void test_case() {
 	//test_binaryCounts();
 	//test_DNAString();
 	//test_getMP3Pos();
-	test_maxCommonString();
+	//test_maxCommonString();
 }
 
 int main()
