@@ -5,10 +5,12 @@
 #include <matchString.h>
 #include <sortMap.h>
 #include <matrix.h>
+#include <matrixComputation.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
-	test_matrix();
+	//test_matrix();
+	test_matrixComputation();
 }
 
 void test_case_1() {
