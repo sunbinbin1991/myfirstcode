@@ -3,8 +3,10 @@
 #include <chrono>
 #include <head.h>
 #include <matchString.h>
+#include <sortMap.h>
 void test_case() {
-	test_matchstring();
+	//test_matchstring();
+	test_sortMap();
 }
 
 void test_case_1() {
@@ -57,6 +59,7 @@ void test_case_1() {
 	//test_DNAString();
 	//test_getMP3Pos();
 	//test_maxCommonString();
+
 }
 
 int main()
