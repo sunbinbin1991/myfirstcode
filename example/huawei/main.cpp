@@ -4,9 +4,11 @@
 #include <head.h>
 #include <matchString.h>
 #include <sortMap.h>
+#include <matrix.h>
 void test_case() {
 	//test_matchstring();
-	test_sortMap();
+	//test_sortMap();
+	test_matrix();
 }
 
 void test_case_1() {
