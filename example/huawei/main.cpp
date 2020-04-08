@@ -6,11 +6,13 @@
 #include <sortMap.h>
 #include <matrix.h>
 #include <matrixComputation.h>
+#include <hundredChiken.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
 	//test_matrix();
-	test_matrixComputation();
+	//test_matrixComputation();
+	test_chiken();
 }
 
 void test_case_1() {
