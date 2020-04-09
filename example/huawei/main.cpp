@@ -7,12 +7,16 @@
 #include <matrix.h>
 #include <matrixComputation.h>
 #include <hundredChiken.h>
+#include <outDay.h>
+#include <deParameter.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
 	//test_matrix();
 	//test_matrixComputation();
-	test_chiken();
+	//test_chiken();
+	//test_getOutDay();
+	test_deparam();
 }
 
 void test_case_1() {
