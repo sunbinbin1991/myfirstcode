@@ -9,6 +9,7 @@
 #include <hundredChiken.h>
 #include <outDay.h>
 #include <deParameter.h>
+#include <GetSequeOddNum.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -16,7 +17,8 @@ void test_case() {
 	//test_matrixComputation();
 	//test_chiken();
 	//test_getOutDay();
-	test_deparam();
+	//test_deparam();
+	test_GetSequeOddNum();
 }
 
 void test_case_1() {
