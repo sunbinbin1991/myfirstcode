@@ -10,6 +10,7 @@
 #include <outDay.h>
 #include <deParameter.h>
 #include <GetSequeOddNum.h>
+#include <dp_distanceBetweenStrings.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -18,7 +19,8 @@ void test_case() {
 	//test_chiken();
 	//test_getOutDay();
 	//test_deparam();
-	test_GetSequeOddNum();
+	//test_GetSequeOddNum();
+	test_dp_distanceOfStrings();
 }
 
 void test_case_1() {
