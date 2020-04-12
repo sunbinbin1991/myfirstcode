@@ -11,6 +11,7 @@
 #include <deParameter.h>
 #include <GetSequeOddNum.h>
 #include <dp_distanceBetweenStrings.h>
+#include <sort.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -20,7 +21,8 @@ void test_case() {
 	//test_getOutDay();
 	//test_deparam();
 	//test_GetSequeOddNum();
-	test_dp_distanceOfStrings();
+	//test_dp_distanceOfStrings();
+	test_combinebysort();
 }
 
 void test_case_1() {
