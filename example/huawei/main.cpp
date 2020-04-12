@@ -12,6 +12,9 @@
 #include <GetSequeOddNum.h>
 #include <dp_distanceBetweenStrings.h>
 #include <sort.h>
+#include <MaxHuiWenPassword.h>
+#include <rankOfPassword.h>
+#include <dp_allPath2Target.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -22,7 +25,10 @@ void test_case() {
 	//test_deparam();
 	//test_GetSequeOddNum();
 	//test_dp_distanceOfStrings();
-	test_combinebysort();
+	//test_combinebysort();
+	//test_findstring();
+	//test_maxValidPassword();
+	test_dp_distanceOfStrings2();
 }
 
 void test_case_1() {
