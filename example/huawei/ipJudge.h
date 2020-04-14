@@ -44,6 +44,9 @@ void test_ipnumchange() {
 	bin2num(bin);
 }
 
+
+
+
 int test_ipnumchange_better()
 {
 	unsigned int a, b, c, d;

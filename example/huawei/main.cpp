@@ -15,6 +15,7 @@
 #include <MaxHuiWenPassword.h>
 #include <rankOfPassword.h>
 #include <dp_allPath2Target.h>
+#include <MaxContinueStr.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -28,7 +29,8 @@ void test_case() {
 	//test_combinebysort();
 	//test_findstring();
 	//test_maxValidPassword();
-	test_dp_distanceOfStrings2();
+	//test_dp_distanceOfStrings2();
+	test_maxContinueNumStr();
 }
 
 void test_case_1() {
