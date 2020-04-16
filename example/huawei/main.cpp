@@ -17,6 +17,7 @@
 #include <dp_allPath2Target.h>
 #include <MaxContinueStr.h>
 #include <voteSum.h>
+#include <RenminbiChina.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -32,7 +33,8 @@ void test_case() {
 	//test_maxValidPassword();
 	//test_dp_distanceOfStrings2();
 	//test_maxContinueNumStr();
-	test_votesum();
+	//test_votesum();
+	test_printRenminbi();
 }
 
 void test_case_1() {
