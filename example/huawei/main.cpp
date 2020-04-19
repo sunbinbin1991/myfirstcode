@@ -18,6 +18,7 @@
 #include <MaxContinueStr.h>
 #include <voteSum.h>
 #include <RenminbiChina.h>
+#include <charSum.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -34,7 +35,8 @@ void test_case() {
 	//test_dp_distanceOfStrings2();
 	//test_maxContinueNumStr();
 	//test_votesum();
-	test_printRenminbi();
+	//test_printRenminbi();
+	test_charsum();
 }
 
 void test_case_1() {
