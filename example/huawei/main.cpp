@@ -20,6 +20,7 @@
 #include <RenminbiChina.h>
 #include <charSum.h>
 #include <MaxGongbeishu.h>
+#include <dp_maxIncreaseOrder.h>
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -38,7 +39,8 @@ void test_case() {
 	//test_votesum();
 	//test_printRenminbi();
 	//test_charsum();
-	test_gongbeishu();
+	//test_gongbeishu();
+	test_maxIncreseOrder();
 }
 
 void test_case_1() {
@@ -75,7 +77,7 @@ void test_case_1() {
 	//test_split_str_by_nums();
 	//test_mlti_threads();
 	//test_calstringdistance();
-	//test_maxContinuousIncreaseOrder();
+	test_maxContinuousIncreaseOrder();
 	//test_maxprofit();
 	//test_minCostPath();
 	//test_print_triangle();
