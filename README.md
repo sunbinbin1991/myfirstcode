@@ -10,6 +10,9 @@ https://selfboot.cn/2016/07/24/leetcode_guide_why/
 * 2：Google 开源项目风格指南
 https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/
 
+*3: 刷题的总结Github网址:
+https://github.com/labuladong/fucking-algorithm
+
 ### 鸡汤时刻：
 * 牛逼的人这么多，凭什么不是别人呢！
 
