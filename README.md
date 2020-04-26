@@ -50,6 +50,8 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 * 你过去20年的每一个选择决定了你现在处境，你现在做的每一个选择，决定了20年后你的处境。
 
 *  心有猛虎,细嗅蔷薇
+
+* 每一个想要学习的念头,都有可能是未来的你在向你求救!
 ---
 
 * ps：coding never stop!!
