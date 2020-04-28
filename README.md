@@ -13,6 +13,9 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 *3: 刷题的总结Github网址:
 https://github.com/labuladong/fucking-algorithm
 
+### 题目索引:
+* 题目索引: [题目索引](https://github.com/sunbinbin1991/myfirstcode/blob/master/doc/algorithm/index.md)
+
 ### 鸡汤时刻：
 * 牛逼的人这么多，凭什么不是别人呢！
 
