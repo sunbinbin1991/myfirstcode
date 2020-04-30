@@ -36,4 +36,5 @@
 * 解法链接:https://github.com/sunbinbin1991/myfirstcode/blob/master/example/huawei/dp_maxIncreaseOrder.h
 
 4: 最大利润点:
+* 题目链接: [最大利润点](https://www.hackerearth.com/zh/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)
 * 解法链接:https://github.com/sunbinbin1991/myfirstcode/blob/master/example/huawei/dp_maxProfit.h
