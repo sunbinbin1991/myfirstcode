@@ -59,7 +59,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 每一个想要学习的念头,都有可能是未来的你在向你求救!
 
-* 改变自己最快的方法,就是去做你不害怕的事!
+* 改变自己最快的方法,就是去做你害怕的事!
 ---
 
 * ps：coding never stop!!
