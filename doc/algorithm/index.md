@@ -10,11 +10,13 @@
 * 题目链接: [高精度整数加法](https://www.nowcoder.com/practice/49e772ab08994a96980f9618892e55b6?tpId=37&tqId=21280&tPage=3&rp=&ru=/ta/huawei&qru=/ta/huawei/question-ranking)
 * 解法链接:https://github.com/sunbinbin1991/myfirstcode/blob/master/example/huawei/addStringNums.h
 
-2: template:
-* 题目链接: []()
-* 解法链接:
+2: : 字字符串中含有特定字符串比例最高的子字符串;
+* 题目链接: [DNA序列](https://www.nowcoder.com/practice/e8480ed7501640709354db1cc4ffd42a?tpId=37&tqId=21286&tPage=4&rp=&ru=/ta/huawei&qru=/ta/huawei/question-ranking)
+* 解法链接:https://github.com/sunbinbin1991/myfirstcode/blob/master/example/huawei/DNAString.h
 
-3: 
+3: 计算字符串距离
+* 解法链接:https://github.com/sunbinbin1991/myfirstcode/blob/master/example/huawei/calStringDistance.h
+
 
 ##### 排序算法
 1: 冒泡排序

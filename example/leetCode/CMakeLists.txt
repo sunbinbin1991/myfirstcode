@@ -14,8 +14,8 @@ file(GLOB USER_Utils_PATH "./Utilities/*.cpp")
 
 add_library(base STATIC ${USER_LIBS_PATH} ${USER_Utils_PATH})
 
-add_executable(demo demo.cpp )
-target_link_libraries(demo base)
+#add_executable(demo demo.cpp )
+#target_link_libraries(demo base)
 
 add_executable(LeetCode main.cpp )
 target_link_libraries(LeetCode base)
