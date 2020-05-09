@@ -6,17 +6,26 @@
 #include <bitset>
 #include "global_head.h"
 #include <7_reverseNum.h>
-
+#include <3_lengthOfLongestSubstring.h>
 using namespace std;
 
+void test_case_simple() {
+	//test_lengthOfLongestSubstring();
+}
 
-int main(){
+void test_case_mid() {
+	test_lengthOfLongestSubstring();
+}
+
+int main() {
 	printf("*******************\n");
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
+	//test_case_simple();
+	test_case_mid();
+
 	printf("\n");
 	system("pause");
-	vector<int> tt[20];
-	printf("size = %d", tt[10].size());
 	return -1;
+}
