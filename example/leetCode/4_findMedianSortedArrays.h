@@ -25,13 +25,12 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 		int count = 0;
 		int a,b;
 		for (auto itr : allnums) {
-			if (count == mid - 1) {
+			if (count == mid) {
 				b = itr;
 				cout << "b = " << itr << endl;
 				return (a + b) / 2.;
-
 			}
-			else if (count++ == (mid)) {
+			else if (count++ == (mid-1-1)) {
 				a = itr;
 				cout << "a = " << itr << endl;
 			}
