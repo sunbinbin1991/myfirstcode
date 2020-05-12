@@ -14,7 +14,7 @@ int lengthOfLongestSubstring2(string s)
 	{
 		bool has_exist = false;
 		int j = 0;
-		set<char> mp;
+		set<char> mp;//unorder_set 速度更快
 		for (j = i; j >= i - DP[i-1]; j--) {
 			if (mp.find(s[j])!=mp.end()) {
 				has_exist = true; 
