@@ -35,7 +35,6 @@ int MatchingTarget(const string& input) {
 				}
 			}
 		}
-
 	}
 	return num;
 }

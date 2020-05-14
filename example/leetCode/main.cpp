@@ -8,10 +8,12 @@
 #include <7_reverseNum.h>
 #include <3_lengthOfLongestSubstring.h>
 #include <4_findMedianSortedArrays.h>
+#include <5_longestPalindrome.h>
 using namespace std;
 
 void test_case_hard() {
 	test_findMedianSortedArrays();
+
 }
 
 void test_case_simple() {
@@ -20,6 +22,7 @@ void test_case_simple() {
 
 void test_case_mid() {
 	//test_lengthOfLongestSubstring();
+	test_longestPalindro();
 }
 
 int main() {
@@ -28,8 +31,8 @@ int main() {
 	printf("*******************\n");
 	
 	// test_case_simple();
-	// test_case_mid();
-	test_case_hard();
+	 test_case_mid();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");

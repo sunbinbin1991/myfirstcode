@@ -17,6 +17,10 @@ https://github.com/labuladong/fucking-algorithm
 * 题目索引: [题目索引](https://github.com/sunbinbin1991/myfirstcode/blob/master/doc/algorithm/index.md)
 
 ### 鸡汤时刻：
+* 时刻想一想,我离一个PL还有多远???!!!
+
+* 如果想要获得别人想不到的快乐,那我准备好了承受别人忍受不了的痛苦么???
+
 * 牛逼的人这么多，凭什么不是别人呢！
 
 * 有时候需要想一下，假如我只能活三天，那么我应该干什么
@@ -62,6 +66,12 @@ https://github.com/labuladong/fucking-algorithm
 * 改变自己最快的方法,就是去做你害怕的事!
 
 * 努力,并不是为了要感动谁,也并不是给某人看,而是要让自己随时有能力跳出自己疲惫的圈子,并拥有选择的权利,过自己喜欢的人生!
+---
+Todo list
+
+* 最近看了这个项目，感觉很有趣[连接](https://github.com/yemount/pose-animator)
+
+
 ---
 
 * ps：coding never stop!!
