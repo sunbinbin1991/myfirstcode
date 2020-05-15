@@ -9,11 +9,11 @@
 #include <3_lengthOfLongestSubstring.h>
 #include <4_findMedianSortedArrays.h>
 #include <5_longestPalindrome.h>
+#include <11_maxArea.h>
 using namespace std;
 
 void test_case_hard() {
-	test_findMedianSortedArrays();
-
+	//test_findMedianSortedArrays();
 }
 
 void test_case_simple() {
@@ -22,7 +22,8 @@ void test_case_simple() {
 
 void test_case_mid() {
 	//test_lengthOfLongestSubstring();
-	test_longestPalindro();
+	//test_longestPalindro();
+	test_maxArea();
 }
 
 int main() {
