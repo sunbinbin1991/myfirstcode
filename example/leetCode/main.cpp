@@ -10,6 +10,7 @@
 #include <4_findMedianSortedArrays.h>
 #include <5_longestPalindrome.h>
 #include <11_maxArea.h>
+#include <46_permute.h>
 using namespace std;
 
 void test_case_hard() {
@@ -23,7 +24,8 @@ void test_case_simple() {
 void test_case_mid() {
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
-	test_maxArea();
+	//test_maxArea();
+	test_permute();
 }
 
 int main() {
