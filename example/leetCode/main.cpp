@@ -11,6 +11,8 @@
 #include <5_longestPalindrome.h>
 #include <11_maxArea.h>
 #include <46_permute.h>
+#include <6_zconvert.h>
+#include <8_atoi.h>
 using namespace std;
 
 void test_case_hard() {
@@ -25,7 +27,9 @@ void test_case_mid() {
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
 	//test_maxArea();
-	test_permute();
+	//test_permute();
+	//test_zconvert();
+	test_atoi();
 }
 
 int main() {
