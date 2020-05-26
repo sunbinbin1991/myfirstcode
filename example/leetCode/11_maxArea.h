@@ -35,5 +35,5 @@ public:
 void test_maxArea() {
 	Solution s1;
 	vector<int> inputArray = { 1,8,6,2,5,4,8,3,7 };
-	s1.maxArea(inputArray);
+	//s1.maxArea(inputArray);
 }
