@@ -70,6 +70,9 @@ https://github.com/labuladong/fucking-algorithm
 * 没有伤痕累累,哪来皮糙肉厚,英雄自古多磨难
 
 * 不要走得太久，忘了当初为什么出发！
+
+* 你可以不了解自己的弱点,但是一定要知道自己的处境.
+
 ---
 Todo list
 
