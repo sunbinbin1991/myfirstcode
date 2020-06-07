@@ -1,5 +1,8 @@
 #pragma once
-class Solution
+#include <vector>
+#include <iostream>
+using namespace std;
+class Solution_num2roman
 {
 public:
 	string intToRoman(int num)
@@ -18,3 +21,7 @@ public:
 		return result;
 	}
 };
+void test_num2roman() {
+
+
+}
