@@ -10,6 +10,12 @@ enum ZDirection{
 
 void zconvert(string& input, int rows)
 {
+	if (input.empty()) {
+		return ;
+	}
+	if (rows == 1) {
+		return;
+	}
 	int lens = input.size();
 	int znums = lens / LENOFONEZU;
 	int zremain = lens % LENOFONEZU;
