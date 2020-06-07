@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-class Solution {
+class Solution_atoi {
 public:
 	int myAtoi(string str)
 	{

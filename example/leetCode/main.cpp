@@ -28,8 +28,8 @@ void test_case_mid() {
 	//test_longestPalindro();
 	//test_maxArea();
 	//test_permute();
-	//test_zconvert();
-	test_atoi();
+	test_zconvert();
+	//test_atoi();
 }
 
 int main() {
