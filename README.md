@@ -73,6 +73,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 你可以不了解自己的弱点,但是一定要知道自己的处境.
 
+* 大处着眼,小处着眼,群聚守口,独居守心!-曾国藩
+
 ---
 Todo list
 
