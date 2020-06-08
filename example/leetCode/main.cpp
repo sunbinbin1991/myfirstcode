@@ -14,7 +14,7 @@
 #include <6_zconvert.h>
 #include <8_atoi.h>
 #include <13_roma2num.h>
-
+#include <14_longestCommonPrefix.h>
 using namespace std;
 
 void test_case_hard() {
@@ -23,6 +23,7 @@ void test_case_hard() {
 
 void test_case_simple() {
 	//test_lengthOfLongestSubstring();
+	tet_longestCommonPrefix();
 }
 
 void test_case_mid() {
@@ -32,7 +33,7 @@ void test_case_mid() {
 	//test_permute();
 	//test_zconvert();
 	//test_atoi();
-	test_roman2num();
+	//test_roman2num();
 }
 
 int main() {
@@ -40,8 +41,8 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	// test_case_simple();
-	 test_case_mid();
+	 test_case_simple();
+	 //test_case_mid();
 	//test_case_hard();
 
 	printf("\n");
