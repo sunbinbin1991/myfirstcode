@@ -17,7 +17,7 @@ string longestCommonPrefix(vector<string>& strs)
 		string common_str = strs[0].substr(0, i);
 		cout << common_str << endl;
 		for (size_t j = 0; j < strs.size(); j++) {
-			bool flag = strs[j].find_first_of(common_str,0) != string::npos;
+			bool flag = strs[j].substr(0,i).compare(common_str) == 0;
 			cout<< strs[j] << " = " << flag << endl;
 			has_prefix = has_prefix && flag;
 			if (!has_prefix) {
