@@ -16,6 +16,8 @@
 #include<13_roma2num.h>
 #include<14_longestCommonPrefix.h>
 #include<15_threeSum.h>
+#include<16_threeSumClosest.h>
+#include<17_letterCombinations.h>
 using namespace std;
 
 void test_case_hard() {
@@ -35,7 +37,9 @@ void test_case_mid() {
 	//test_zconvert();
 	//test_atoi();
 	//test_roman2num();
-	test_threeSum();
+	//test_threeSum();
+	//test_threeSumClosest();
+	test_letterCombinations();
 }
 
 int main() {
