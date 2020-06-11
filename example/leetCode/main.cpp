@@ -18,6 +18,7 @@
 #include<15_threeSum.h>
 #include<16_threeSumClosest.h>
 #include<17_letterCombinations.h>
+#include<18_fourSum.h>
 using namespace std;
 
 void test_case_hard() {
@@ -39,7 +40,8 @@ void test_case_mid() {
 	//test_roman2num();
 	//test_threeSum();
 	//test_threeSumClosest();
-	test_letterCombinations();
+	//test_letterCombinations();
+	test_foursum();
 }
 
 int main() {
