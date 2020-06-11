@@ -22,6 +22,9 @@ vector<vector<int>> fourSum(vector<int>& nums, int target)
 		for (int j = i+1; j <= len - 3; j++) {
 			for (int m = j+1; m <= len - 2; m++) {
 				for (int n = m+1; n <= len -1; n++) {
+					if (nums[i] + nums[j] + nums[m] + nums[n] > target) {
+						break;
+					}
 					cout << nums[i]<< nums[j] << nums[m] << nums[n] << endl;
 					if (nums[i] + nums[j] + nums[m] + nums[n] == target) {
 						vector<int> tmp;
@@ -40,6 +43,13 @@ vector<vector<int>> fourSum(vector<int>& nums, int target)
 						if (!alreadyHad) {
 							res.push_back(tmp);
 						}
+						while (n <= len - 1 && nums[i] == nums[n]) {
+							i++;
+							j++;
+							m++;
+							n++;
+						}
+
 					}
 				}
 			}
