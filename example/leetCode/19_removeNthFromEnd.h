@@ -38,7 +38,24 @@ namespace temp {
 
 		return head;
 	}
+	ListNode* removeNthFromEnd_BEST(ListNode* head, int n)
+	{
 
+		ListNode* faster = head;
+		ListNode* normal = head;
+		while (n--) {
+			faster = faster->next;
+		}
+		if (faster == nullptr) {
+			head = head->next;
+			return head;
+		}
+		while (faster->next != nullptr) {
+			normal = normal->next;
+			faster = faster->next;
+		}
+		normal->next = normal->next->next;
+	}
 	void test_rmNthFromEnd()
 	{
 		ListNode *res1 = new ListNode(1);
