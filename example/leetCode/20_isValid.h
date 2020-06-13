@@ -12,30 +12,13 @@ bool isValid(string s)
 	for (int i = 0; i < len; i++) {
 		char tmp = s[i];
 		if ((tmp == ')' || tmp == ']' || tmp == '}' )&& ch_small.empty()) {
-			printf(" ch_small.empty()1 = %d\n", ch_small.empty());
 			return false;
 		}
-
-		if (tmp == ')') {
-			if (ch_small.top() == '(') {
-				ch_small.pop();
-			} else {
-				return false;
-			}
-		} else if (tmp == ']') {
-			if (ch_small.top() == '[') {
-				ch_small.pop();
-			} else {
-				return false;
-			}
-		} else if (tmp == '}') {
-			if (ch_small.top() == '{') {
-				ch_small.pop();
-			}else{
-				return false;
-			}
+		if (tmp == ')'&&ch_small.top() == '('||
+			tmp == ']'&&ch_small.top() == '['||
+			tmp == '}'&&ch_small.top() == '{') {
+			ch_small.pop();
 		} else {
-			printf(" ch_small.empty()2 = %d\n", ch_small.empty());
 			ch_small.push(tmp);
 		}
 	}
