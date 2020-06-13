@@ -20,6 +20,7 @@
 #include<17_letterCombinations.h>
 #include<18_fourSum.h>
 #include<19_removeNthFromEnd.h>
+#include<20_isValid.h>
 using namespace std;
 
 void test_case_hard() {
@@ -43,7 +44,8 @@ void test_case_mid() {
 	//test_threeSumClosest();
 	//test_letterCombinations();
 	//test_foursum();
-	temp::test_rmNthFromEnd();
+	//temp::test_rmNthFromEnd();
+	test_valid();
 }
 
 int main() {
