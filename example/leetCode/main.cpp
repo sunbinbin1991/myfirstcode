@@ -21,6 +21,7 @@
 #include<18_fourSum.h>
 #include<19_removeNthFromEnd.h>
 #include<20_isValid.h>
+#include<22_generateParenthesis.h>
 using namespace std;
 
 void test_case_hard() {
@@ -45,7 +46,8 @@ void test_case_mid() {
 	//test_letterCombinations();
 	//test_foursum();
 	//temp::test_rmNthFromEnd();
-	test_valid();
+	//test_valid();
+
 }
 
 int main() {

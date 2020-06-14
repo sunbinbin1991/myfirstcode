@@ -75,6 +75,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 大处着眼,小处着眼,群聚守口,独居守心!-曾国藩
 
+* 有时候,人是和树是一样的,越是向往光明,越是要扎根深处.
+
 ---
 Todo list
 
