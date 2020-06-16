@@ -23,18 +23,22 @@ bool isValid(string s)
 	}
 	return ch_small.empty();
 }
-//括号生成的步骤
-void generaterkuohao(int depth, int len, string path, vector<string> res ) {
-	if (path.size() == len) {
-		res.push_back(path);
+
+
+//括号生成的步骤,dfs 顺序
+void generate_all(string& current, int n, vector<string>& result)
+{
+	if (n == current.size()) {
+		if (isValid(current))
+			result.push_back(current);
 		return;
 	}
-	path += "(";
-	path += ")";
-
-	
-
-
+	current += '(';
+	generate_all(current, n, result);
+	current.pop_back();
+	current += ')';
+	generate_all(current, n, result);
+	current.pop_back();
 }
 
 void test_generateParenthesis() {
