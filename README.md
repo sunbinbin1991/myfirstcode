@@ -77,6 +77,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 有时候,人是和树是一样的,越是向往光明,越是要扎根深处.
 
+* 君子不立于危墙!
+
 ---
 Todo list
 
