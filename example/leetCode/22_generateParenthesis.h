@@ -5,7 +5,7 @@
 #include <set>
 using namespace std;
 
-bool isValid(string s)
+bool isKuohaoValid(string s)
 {
 	if (s.empty()) return true;
 	int len = s.size();
