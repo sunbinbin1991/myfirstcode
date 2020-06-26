@@ -81,6 +81,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 为了爱我的人,和我爱的人,永不止步!
 
+* 她那时候还太年轻，不知道所有命运赠送的礼物，早已在暗中标好了价格.
+
 ---
 Todo list
 
