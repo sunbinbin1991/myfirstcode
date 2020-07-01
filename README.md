@@ -83,6 +83,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 她那时候还太年轻，不知道所有命运赠送的礼物，早已在暗中标好了价格.
 
+* 20年的下半年开始了...
+
 ---
 Todo list
 
