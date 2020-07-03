@@ -85,6 +85,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 20年的下半年开始了...
 
+ * 你一定要站在自己热爱的世界里闪闪发光!
+
 ---
 Todo list
 
