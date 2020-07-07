@@ -23,3 +23,12 @@ ListNode* swapPairs(ListNode* head)
 	return res->next;
 }
 
+void test_swappairs() {
+	ListNode* head = new ListNode(0);
+	ListNode* l1 = new ListNode(1);
+	ListNode* l3 = new ListNode(2);
+	ListNode* l3 = new ListNode(3);
+
+
+
+}
