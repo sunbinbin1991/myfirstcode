@@ -1,7 +1,8 @@
 #include<vector>
 #include<21_mergeTwoLists.h>
-using namespace temp;
+//using namespace temp;
 using namespace std;
+
 ListNode* swapPairs(ListNode* head)
 {
 	if (!head) return NULL;
@@ -26,9 +27,20 @@ ListNode* swapPairs(ListNode* head)
 void test_swappairs() {
 	ListNode* head = new ListNode(0);
 	ListNode* l1 = new ListNode(1);
-	ListNode* l3 = new ListNode(2);
+	ListNode* l2 = new ListNode(2);
 	ListNode* l3 = new ListNode(3);
+	ListNode* l4 = new ListNode(4);
 
+	head->next = l1;
+	l1->next = l2;
+	l2->next = l3;
+	l3->next = l4;
 
+	ListNode* res = swapPairs(head);
 
+	while (res != nullptr) {
+		printf("%d ", res->val);
+		res = res->next;
+	}
 }
+

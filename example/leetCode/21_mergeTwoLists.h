@@ -3,11 +3,6 @@
 #include<iostream>
 #include<algorithm>
 namespace temp {
-	struct ListNode {
-		int val;
-		ListNode* next;
-		ListNode(int x) : val(x), next(nullptr) {}
-	};
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)
 	{
 		if (l1 == nullptr) {

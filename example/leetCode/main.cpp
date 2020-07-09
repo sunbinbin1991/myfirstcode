@@ -22,6 +22,8 @@
 #include<19_removeNthFromEnd.h>
 #include<20_isValid.h>
 #include<22_generateParenthesis.h>
+#include<24_swapPairs.h>
+
 using namespace std;
 
 void test_case_hard() {
@@ -47,7 +49,7 @@ void test_case_mid() {
 	//test_foursum();
 	//temp::test_rmNthFromEnd();
 	//test_valid();
-
+	test_swappairs();
 }
 
 int main() {
