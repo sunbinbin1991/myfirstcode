@@ -25,9 +25,20 @@ inline void createList(ListNode* &pHead)
 	{
 		ListNode* pNewNode = new ListNode(0);
 		pNewNode->m_key = i;
+		pNewNode->val = i;
 		pNewNode->next = NULL;
 		p->next = pNewNode;
 		p = pNewNode;
+	}
+}
+
+inline void PrintList(ListNode* &pHead) 
+{
+	int count = 0;
+	ListNode* part = pHead;
+	while(part && part->next){
+		printf("[%d] %d\n", count++, part->val);
+		part = part->next;
 	}
 }
 

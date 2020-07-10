@@ -38,7 +38,7 @@ void test_swappairs() {
 
 	ListNode* res = swapPairs(head);
 
-	while (res != nullptr) {
+	while (res->next) {
 		printf("%d ", res->val);
 		res = res->next;
 	}

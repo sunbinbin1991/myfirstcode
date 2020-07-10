@@ -23,11 +23,12 @@
 #include<20_isValid.h>
 #include<22_generateParenthesis.h>
 #include<24_swapPairs.h>
-
+#include<25_reverseKListNode.h>
 using namespace std;
 
 void test_case_hard() {
 	//test_findMedianSortedArrays();
+	test_reverseKListNode();
 }
 
 void test_case_simple() {
@@ -49,7 +50,7 @@ void test_case_mid() {
 	//test_foursum();
 	//temp::test_rmNthFromEnd();
 	//test_valid();
-	test_swappairs();
+	//test_swappairs();
 }
 
 int main() {
@@ -58,8 +59,8 @@ int main() {
 	printf("*******************\n");
 	
 	 //test_case_simple();
-	 test_case_mid();
-	//test_case_hard();
+	 //test_case_mid();
+	test_case_hard();
 
 	printf("\n");
 	system("pause");
