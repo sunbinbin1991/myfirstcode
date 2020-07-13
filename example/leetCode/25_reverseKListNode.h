@@ -3,17 +3,21 @@
 
 ListNode* reverseListNode(ListNode* phead)
 {
-	ListNode* res = NULL;
-	ListNode* tmp = NULL;
-	ListNode* p = phead;
-	while (p->next) {
-		tmp = p->next;
-		tmp->next = res;
-		res = tmp;
-		p = p->next;
-		printf("%d\n", p->val);
+	ListNode* res = nullptr;
+	ListNode* tmp = nullptr;
+	while (phead) {
+		//tmp = phead->next;
+		//phead->next = res;
+		//res = phead;
+		//phead = tmp;
+
+		tmp = phead->next;
+		phead->next = res;
+		res = phead;
+		phead = tmp;
+		//printf("%d\n", phead->val);
 	}
-	return tmp;
+	return res;
 }
 
 ListNode* reverseKListNode(ListNode* phead,int k)
@@ -27,7 +31,7 @@ void test_reverseKListNode()
 	ListNode* head = new ListNode(0);
 
 	createList(head);
-	PrintList(head);
+	//PrintList(head);
 
 	ListNode* res = reverseListNode(head);
 	PrintList(res);
