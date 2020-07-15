@@ -17,10 +17,10 @@ ListNode* reverseListNode(ListNode* phead)
 		if (count++ == k) {
 			count = 1;
 			ListNode* tmptemp = nullptr;
-			//mergeNodes = targetres;
+			mergeNodes = targetres;
 			if (targetres == nullptr) {
 				targetres = subNodes;
-				//subNodes = nullptr;
+				subNodes = nullptr;
 				continue;
 			}
 			while (mergeNodes) {
