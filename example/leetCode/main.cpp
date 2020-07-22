@@ -24,11 +24,13 @@
 #include<22_generateParenthesis.h>
 #include<24_swapPairs.h>
 #include<25_reverseKListNode.h>
+#include<26_removeDuplicates.h>
 using namespace std;
 
 void test_case_hard() {
 	//test_findMedianSortedArrays();
-	test_reverseKListNode();
+	//test_reverseKListNode();
+	test_rmDuplicates();
 }
 
 void test_case_simple() {

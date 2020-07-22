@@ -1,6 +1,6 @@
 #pragma once
 #include"typedef.h"
-
+// copy
 pair<ListNode*, ListNode*> myReverse(ListNode* head, ListNode* tail)
 {
 	ListNode* prev = tail->next;
