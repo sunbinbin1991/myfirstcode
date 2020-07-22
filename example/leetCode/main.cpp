@@ -25,17 +25,19 @@
 #include<24_swapPairs.h>
 #include<25_reverseKListNode.h>
 #include<26_removeDuplicates.h>
+#include<28_strStr.h>
 using namespace std;
 
 void test_case_hard() {
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
-	test_rmDuplicates();
+	//test_rmDuplicates();
 }
 
 void test_case_simple() {
 	//test_lengthOfLongestSubstring();
 	//tet_longestCommonPrefix();
+    test_strStr();
 }
 
 void test_case_mid() {
@@ -60,9 +62,9 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	 //test_case_simple();
+	 test_case_simple();
 	 //test_case_mid();
-	test_case_hard();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");
