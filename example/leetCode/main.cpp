@@ -26,6 +26,7 @@
 #include<25_reverseKListNode.h>
 #include<26_removeDuplicates.h>
 #include<28_strStr.h>
+#include<recur_1611_devingBoard.h>
 using namespace std;
 
 void test_case_hard() {
@@ -37,7 +38,8 @@ void test_case_hard() {
 void test_case_simple() {
 	//test_lengthOfLongestSubstring();
 	//tet_longestCommonPrefix();
-    test_strStr();
+    //test_strStr();
+    test_divingBoard();
 }
 
 void test_case_mid() {
