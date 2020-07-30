@@ -34,7 +34,6 @@ int getNumsDevides(int num, int n) {
 		printf("%d %d\n", num-n, n);
 		return getNumsDevides(num,  n-1)+ getNumsDevides(num-n, n);
 	}
-	
 }
 
 int test_getNumsDevides() {

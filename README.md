@@ -88,6 +88,8 @@ https://github.com/labuladong/fucking-algorithm
 * 你一定要站在自己热爱的世界里闪闪发光!
 
 * 为了所有我爱的人和爱我的人.
+
+* 越是困难的事,越是证明这件事值得去做.
 ---
 Todo list
 
