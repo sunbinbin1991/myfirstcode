@@ -27,6 +27,7 @@
 #include<26_removeDuplicates.h>
 #include<28_strStr.h>
 #include<recur_1611_devingBoard.h>
+#include<350_intersection.h>
 using namespace std;
 
 void test_case_hard() {
@@ -39,7 +40,8 @@ void test_case_simple() {
 	//test_lengthOfLongestSubstring();
 	//tet_longestCommonPrefix();
     //test_strStr();
-    test_divingBoard();
+    //test_divingBoard();
+    test_intersection();
 }
 
 void test_case_mid() {
