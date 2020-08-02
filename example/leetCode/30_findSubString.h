@@ -2,7 +2,9 @@
 #include<vector>
 #include<iostream>
 #include<unordered_map>
-
+// 维护两个map,其中一个为初始map,记录字符串及个数
+// 第二个map用于记录遍历时的个数.若是map个数清空,则可认为能够满足要求
+// 从第一个字符遍历,直到最后一个字符串
 using namespace std;
 vector<int> findSubstring(string s, vector<string>& words)
 {

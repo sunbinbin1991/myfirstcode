@@ -1,7 +1,8 @@
 #pragma once
 #include<vector>
 #include<iostream>
-
+#include<algorithm>
+using namespace std;
 vector<vector<int>> merge(vector<vector<int>>& intervals)
 {
     if (intervals.size() == 0) {
