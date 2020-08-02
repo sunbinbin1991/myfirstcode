@@ -9,6 +9,9 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
     vector<int> res;
     set<int> resSet;
     for (int i = 0; i < nums1.size(); i++) {
+        if (resSet.find(nums1[i]) != resSet.end()) {
+            continue;
+        }
         for (int j = 0; j < nums2.size(); j++) {
             if (nums1[i] == nums2[j]) {
                 resSet.emplace(nums1[i]);
