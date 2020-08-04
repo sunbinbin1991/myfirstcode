@@ -91,6 +91,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 越是困难的事,越是证明这件事值得去做.
 
+* 有些事是必须要做的,你必须要为之拼一把,不可言弃,不可松懈,不可厌倦.
+
 
 ---
 Todo list
