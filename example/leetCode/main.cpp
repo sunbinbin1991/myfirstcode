@@ -30,6 +30,7 @@
 #include<350_intersection.h>
 #include<349_intersect.h>
 #include<121_maxProfit.h>
+#include<66_addOne.h>
 using namespace std;
 
 void test_case_hard() {
@@ -45,7 +46,8 @@ void test_case_simple() {
     //test_divingBoard();
     //test_intersection();
     //test_intersection2();
-    test_maxStockProfit();
+    //test_maxStockProfit();
+    test_plusOne();
 }
 
 void test_case_mid() {
