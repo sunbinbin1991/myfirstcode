@@ -93,6 +93,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 有些事是必须要做的,你必须要为之拼一把,不可言弃,不可松懈,不可厌倦.
 
+* 哪有什么岁月静好,还不是最亲的人帮你抵御了外界的苦难.
+
 
 ---
 Todo list
