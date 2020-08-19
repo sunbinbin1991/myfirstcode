@@ -99,6 +99,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 努力吧,少年呢~~
 
+* 走出舒适区的目的不是找罪受,而是找到一个你之前从来不知道的更好的舒适区域.
+
 
 ---
 Todo list
