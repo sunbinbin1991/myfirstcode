@@ -32,6 +32,7 @@
 #include<121_maxProfit.h>
 #include<66_addOne.h>
 #include<53_maxSubArray.h>
+#include<300_DP_LIS.h>
 using namespace std;
 
 void test_case_hard() {
@@ -49,7 +50,7 @@ void test_case_simple() {
     //test_intersection2();
     //test_maxStockProfit();
     //test_plusOne();
-    test_maxSubArray();
+    //test_maxSubArray();
 }
 
 void test_case_mid() {
@@ -67,6 +68,7 @@ void test_case_mid() {
 	//temp::test_rmNthFromEnd();
 	//test_valid();
 	//test_swappairs();
+    test_lengthOfLIS();
 }
 
 int main() {
@@ -74,8 +76,8 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	 test_case_simple();
-	 //test_case_mid();
+	//test_case_simple();
+	test_case_mid();
 	//test_case_hard();
 
 	printf("\n");
