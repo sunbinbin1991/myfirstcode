@@ -103,6 +103,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 真是优秀的人的比我还努力,努力奋斗,找准方向!
 
+* 写到世界充满爱.......
+
 
 ---
 Todo list

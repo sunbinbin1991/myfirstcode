@@ -33,6 +33,7 @@
 #include<66_addOne.h>
 #include<53_maxSubArray.h>
 #include<300_DP_LIS.h>
+#include<120_minimumTotal.h>
 using namespace std;
 
 void test_case_hard() {
@@ -68,7 +69,8 @@ void test_case_mid() {
 	//temp::test_rmNthFromEnd();
 	//test_valid();
 	//test_swappairs();
-    test_lengthOfLIS();
+    //test_lengthOfLIS();
+    test_minimumTotal();
 }
 
 int main() {
