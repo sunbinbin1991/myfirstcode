@@ -11,7 +11,11 @@
 #include<vector>
 #include<cmath>
 #include<algorithm>
+#include<stack>
 namespace tree {
+
+
+
     using namespace std;
     struct TreeNode {
         int val;
@@ -26,6 +30,25 @@ namespace tree {
          / \
        15   7 
     */
+
+    vector<TreeNode> traversal(TreeNode root)
+    {
+        vector<TreeNode> res;
+        stack<TreeNode> stack;
+        stack.emplace(root);
+        while (!stack.empty()) {
+            TreeNode node = stack.top();
+            res.push_back(node);
+            stack.pop();
+            if (node.right != NULL) {
+                stack.emplace(*node.right);
+            }
+            if (node.left != NULL) {
+                stack.emplace(*node.left);
+            }
+        }
+        return res;
+    }
 
     TreeNode* generateTree() {
         TreeNode* root = new TreeNode(3);
@@ -49,6 +72,10 @@ namespace tree {
     {
         TreeNode *root = generateTree();
         int dep = maxDepth(root);
-        printf("dep = %d\n", dep);
+
+        vector<TreeNode> res = traversal(*root);
+        for (size_t i = 0; i < res.size(); i++) {
+            printf("%d\n", res[i].val);
+        }
     }
 }
