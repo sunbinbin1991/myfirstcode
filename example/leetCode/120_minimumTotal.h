@@ -10,7 +10,7 @@ int minimumTotal(vector<vector<int>>& triangle)
     if (triangle.empty()) return 0;
     if (triangle.size() == 1) return triangle[0][0];
     int len = triangle.size();
-    vector<vector<int>> DP(len + 1, vector<int>(len + 1));
+    vector<vector<int>> DP(len, vector<int>(len));
 
     DP[0][0] = triangle[0][0];
     DP[1][0] = triangle[0][0] + triangle[1][0];
