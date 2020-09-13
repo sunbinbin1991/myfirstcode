@@ -35,6 +35,7 @@
 #include<300_DP_LIS.h>
 #include<120_minimumTotal.h>
 #include<344_reverseStr.h>
+#include<104_maxDepth.h>
 using namespace std;
 
 void test_case_hard() {
@@ -53,7 +54,8 @@ void test_case_simple() {
     //test_maxStockProfit();
     //test_plusOne();
     //test_maxSubArray();
-    test_reverseString();
+    //test_reverseString();
+    tree::test_maxdepth();
 }
 
 void test_case_mid() {

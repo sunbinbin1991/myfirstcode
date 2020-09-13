@@ -12,7 +12,7 @@ void reverseString(vector<char>& s)
     char * right = s.data() + s.size()-1;
     if (left == right) return;
    
-    //printf("%d %d \n", left, right);
+    printf("%d %d \n", left, right);
     while (left < right) {
         printf("%c %c \n", *left, *right);
         swap(*left, *right);
