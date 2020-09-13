@@ -34,6 +34,7 @@
 #include<53_maxSubArray.h>
 #include<300_DP_LIS.h>
 #include<120_minimumTotal.h>
+#include<344_reverseStr.h>
 using namespace std;
 
 void test_case_hard() {
@@ -52,6 +53,7 @@ void test_case_simple() {
     //test_maxStockProfit();
     //test_plusOne();
     //test_maxSubArray();
+    test_reverseString();
 }
 
 void test_case_mid() {
@@ -70,7 +72,7 @@ void test_case_mid() {
 	//test_valid();
 	//test_swappairs();
     //test_lengthOfLIS();
-    test_minimumTotal();
+    //test_minimumTotal();
 }
 
 int main() {
@@ -78,8 +80,8 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	//test_case_simple();
-	test_case_mid();
+	test_case_simple();
+	//test_case_mid();
 	//test_case_hard();
 
 	printf("\n");
