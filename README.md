@@ -105,6 +105,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 写到世界充满爱.......
 
+* 就一个字,上!!!
+
 
 ---
 Todo list

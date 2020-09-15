@@ -61,7 +61,7 @@ namespace tree {
             tmp.push_back(root->val);
             res.push_back(tmp);
         } else {
-            printf(" test %d %d \n", res.size(),level);
+            //printf(" test %d %d \n", res.size(),level);
             if (res.size() == level) {
                 vector<int> tmp;
                 tmp.push_back(root->val);
