@@ -9,7 +9,6 @@ void dfs(vector<int>& nums, int len,int depth,
 		result.push_back(path);
 		return ;
 	}
-
 	for (size_t i = 0; i < len; i++) {
 		if (used[i]) {
 			continue;

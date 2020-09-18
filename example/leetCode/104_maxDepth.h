@@ -12,6 +12,7 @@
 #include<cmath>
 #include<algorithm>
 #include<stack>
+#include<queue>
 namespace tree {
 
 
@@ -91,6 +92,25 @@ namespace tree {
         }
         return max(maxDepth(root->left), maxDepth(root->right)) + 1;
     }
+
+    //void bfs(TreeNode root)
+    //{
+    //    Queue<TreeNode> queue = new ArrayDeque<>();
+    //    queue.add(root);
+    //    while (!queue.isEmpty()) {
+    //        int n = queue.size();
+    //        for (int i = 0; i < n; i++) {
+    //            // 变量 i 无实际意义，只是为了循环 n 次
+    //            TreeNode node = queue.poll();
+    //            if (node.left != null) {
+    //                queue.add(node.left);
+    //            }
+    //            if (node.right != null) {
+    //                queue.add(node.right);
+    //            }
+    //        }
+    //    }
+    //}
 
     void test_maxdepth() 
     {
