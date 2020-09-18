@@ -36,12 +36,14 @@
 #include<120_minimumTotal.h>
 #include<344_reverseStr.h>
 #include<104_maxDepth.h>
+#include<239_maxSlidingWindow.h>
 using namespace std;
 
 void test_case_hard() {
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
 	//test_rmDuplicates();
+    test_maxSlidingWindow();
 }
 
 void test_case_simple() {
@@ -55,7 +57,7 @@ void test_case_simple() {
     //test_plusOne();
     //test_maxSubArray();
     //test_reverseString();
-    tree::test_maxdepth();
+    //tree::test_maxdepth();
 }
 
 void test_case_mid() {
@@ -82,9 +84,9 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	test_case_simple();
+	//test_case_simple();
 	//test_case_mid();
-	//test_case_hard();
+	test_case_hard();
 
 	printf("\n");
 	system("pause");

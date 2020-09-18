@@ -15,9 +15,6 @@
 #include<queue>
 #include<deque>
 namespace tree {
-
-
-
     using namespace std;
     struct TreeNode {
         int val;
