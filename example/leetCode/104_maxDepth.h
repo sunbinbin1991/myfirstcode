@@ -115,7 +115,7 @@ namespace tree {
 
     void BFS(TreeNode* root,vector<vector<int>>& res)
     {
-        if (root == nullptr) return;
+        if (root == nullptr) return; // 异常情况实现判断
         queue<TreeNode> nodeQueue;
         nodeQueue.push(*root);
         while (!nodeQueue.empty()) {
