@@ -13,6 +13,7 @@
 #include<algorithm>
 #include<stack>
 #include<queue>
+#include<deque>
 namespace tree {
 
 
@@ -112,6 +113,30 @@ namespace tree {
     //    }
     //}
 
+    void BFS(TreeNode* root,vector<vector<int>>& res)
+    {
+        if (root == nullptr) return;
+        queue<TreeNode> nodeQueue;
+        nodeQueue.push(*root);
+        while (!nodeQueue.empty()) {
+            int num = nodeQueue.size();
+            vector<int> tmp(num);
+            for (size_t i = 0; i < num; i++) {
+                TreeNode tmpNode = nodeQueue.front();
+                tmp[i] = tmpNode.val;
+                if (tmpNode.left != nullptr) {
+                    nodeQueue.push(*tmpNode.left);
+                }
+                if (tmpNode.right != nullptr) {
+                    nodeQueue.push(*tmpNode.right);
+                }
+                nodeQueue.pop();
+            }
+            res.push_back(tmp);
+        }
+    }
+
+
     void test_maxdepth() 
     {
         TreeNode *root = generateTree();
@@ -126,7 +151,8 @@ namespace tree {
 
         // 3：层次遍历所有节点
         vector<vector<int>> resvec;
-        DFS(root, 0, resvec);
+        //DFS(root, 0, resvec);
+        BFS(root, resvec);
         for (size_t i = 0; i < resvec.size(); i++) {
             for (size_t j = 0; j < resvec[i].size(); j++) {
                 printf("%d ", resvec[i][j]);
