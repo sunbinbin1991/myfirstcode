@@ -27,19 +27,30 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k)
     }
     int maxLastTrain = INT_MIN;
     int maxIndex = -1;
-    for (size_t i = k - 1; i < nums.size(); i++) {
-        if (i >= k && maxIndex != i - k) {
-            if (nums[i] > maxLastTrain) {
-                maxLastTrain = nums[i];
-                res.push_back(maxLastTrain);
-                continue;
-            } else {
-                res.push_back(maxLastTrain);
-                continue;
-            }
+    deque<int> numTrain;
+    for (size_t i = 0; i < nums.size(); i++) {
+        if (numTrain.empty()) {
+            numTrain.push_back(nums[i]);
+            res.push_back(numTrain.front);
+            continue;
         }
-        maxLastTrain = maxTrainNum(nums, i, k, maxIndex);
-        res.push_back(maxLastTrain);
+        if (i < k) {
+            if (nums[i] > numTrain.front()) {
+                numTrain.pop_front();
+                numTrain.push_back(nums[i]);
+            }
+            res.push_back(numTrain.front);
+            continue;
+        }
+        int frontNum = numTrain.front();
+        if (nums[i] < frontNum) {
+            res.push_back(nums[i]);
+            continue;
+        }
+
+        if (nums[i] > frontNum) {
+            numTrain.
+        }
     }
     return res;
 }
