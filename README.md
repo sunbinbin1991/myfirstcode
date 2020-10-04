@@ -105,7 +105,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 写到世界充满爱.......
 
-* 就一个字,上!!!
+* 学习是一项长跑，人生也是一种长跑，找到目标，用尽全力跑，一直跑，不要停
 
 
 ---
