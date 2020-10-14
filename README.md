@@ -107,6 +107,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 学习是一项长跑，人生也是一种长跑，找到目标，用尽全力跑，一直跑，不要停
 
+* 你越是厌烦或是想逃避一件事,最后的最后,你还是会做,并且无可避免.
 
 ---
 Todo list
