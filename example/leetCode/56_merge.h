@@ -8,8 +8,10 @@ vector<vector<int>> merge(vector<vector<int>>& intervals)
     if (intervals.size() == 0) {
         return{};
     }
+    // 1: 对二维数据进行排序
     sort(intervals.begin(), intervals.end());
     vector<vector<int>> merged;
+    // 2: 每次添加左点和右点
     for (int i = 0; i < intervals.size(); ++i) {
         int L = intervals[i][0], R = intervals[i][1];
         if (!merged.size() || merged.back()[1] < L) {
