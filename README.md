@@ -115,6 +115,7 @@ Todo list
 
 * 最近看了这个项目，感觉很有趣[连接](https://github.com/yemount/pose-animator)
 
+* 算法刷题 : https://github.com/labuladong/fucking-algorithm
 
 ---
 

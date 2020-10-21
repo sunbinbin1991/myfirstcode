@@ -31,7 +31,7 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k)
     for (size_t i = 0; i < nums.size(); i++) {
         if (numTrain.empty()) {
             numTrain.push_back(nums[i]);
-            res.push_back(numTrain.front);
+            //res.push_back(numTrain.front);
             continue;
         }
         if (i < k) {
@@ -39,7 +39,7 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k)
                 numTrain.pop_front();
                 numTrain.push_back(nums[i]);
             }
-            res.push_back(numTrain.front);
+            //res.push_back(numTrain.front);
             continue;
         }
         int frontNum = numTrain.front();
@@ -49,7 +49,7 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k)
         }
 
         if (nums[i] > frontNum) {
-            numTrain.
+            //numTrain.
         }
     }
     return res;
