@@ -109,7 +109,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 你越是厌烦或是想逃避一件事,最后的最后,你还是会做,并且无可避免.
 
-* 
+* 每天多花五分钟,想一想如何才能比昨天进步.
 ---
 Todo list
 
