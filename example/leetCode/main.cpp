@@ -37,6 +37,7 @@
 #include<344_reverseStr.h>
 #include<104_maxDepth.h>
 #include<239_maxSlidingWindow.h>
+#include<1207_uniqueOccurrences.h>
 using namespace std;
 
 void test_case_hard() {
