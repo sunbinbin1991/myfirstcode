@@ -29,10 +29,22 @@ namespace tree {
         //root->right->right->right = new TreeNode(7);
         return root;
     }
+    int dfs(TreeNode* root, int prevSum)
+    {
+        if (root == nullptr) {
+            return 0;
+        }
+        int sum = prevSum * 10 + root->val;
+        if (root->left == nullptr && root->right == nullptr) {
+            return sum;
+        } else {
+            return dfs(root->left, sum) + dfs(root->right, sum);
+        }
+    }
+
     void dfsTree(TreeNode* root, int depth, std::stack<int> &path,
         vector<stack<int>> &res)
     {
-        printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         if (root->left == nullptr && root->right == nullptr) {
             res.push_back(path);
             return;
