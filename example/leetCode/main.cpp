@@ -38,13 +38,15 @@
 #include<104_maxDepth.h>
 #include<239_maxSlidingWindow.h>
 #include<1207_uniqueOccurrences.h>
+#include<129_sumNumberTree.h>
 using namespace std;
+using namespace tree;
 
 void test_case_hard() {
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
 	//test_rmDuplicates();
-    test_maxSlidingWindow();
+    //test_maxSlidingWindow();
 }
 
 void test_case_simple() {
@@ -62,6 +64,7 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
+    test_sumTree();
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
 	//test_maxArea();
@@ -86,7 +89,7 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	//test_case_mid();
+	test_case_mid();
 	test_case_hard();
 
 	printf("\n");
