@@ -31,13 +31,18 @@ namespace tree {
     }
     int dfs(TreeNode* root, int prevSum)
     {
+        // 判断边界
         if (root == nullptr) {
             return 0;
         }
+        // 对每个节点相应操作
         int sum = prevSum * 10 + root->val;
+        
+        //检查当前状态
         if (root->left == nullptr && root->right == nullptr) {
             return sum;
         } else {
+            // 前向下一状态
             return dfs(root->left, sum) + dfs(root->right, sum);
         }
     }
@@ -45,6 +50,9 @@ namespace tree {
     void dfsTree(TreeNode* root, int depth, std::stack<int> &path,
         vector<stack<int>> &res)
     {
+
+
+
         if (root->left == nullptr && root->right == nullptr) {
             res.push_back(path);
             return;
