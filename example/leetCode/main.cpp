@@ -40,6 +40,7 @@
 #include<1207_uniqueOccurrences.h>
 #include<129_sumNumberTree.h>
 #include<327_countRangeSum.h>
+#include<88_mergeSortedArray.h>
 using namespace std;
 using namespace tree;
 
@@ -48,7 +49,7 @@ void test_case_hard() {
 	//test_reverseKListNode();
 	//test_rmDuplicates();
     //test_maxSlidingWindow();
-    test_countRangeSum();
+    //test_countRangeSum();
 }
 
 void test_case_simple() {
@@ -63,6 +64,7 @@ void test_case_simple() {
     //test_maxSubArray();
     //test_reverseString();
     //tree::test_maxdepth();
+    test_merge_array();
 }
 
 void test_case_mid() {
@@ -90,9 +92,9 @@ int main() {
 	printf("*-hello leet code-*\n");
 	printf("*******************\n");
 	
-	//test_case_simple();
+	test_case_simple();
 	//test_case_mid();
-	test_case_hard();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");
