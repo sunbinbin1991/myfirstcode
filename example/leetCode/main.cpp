@@ -39,6 +39,7 @@
 #include<239_maxSlidingWindow.h>
 #include<1207_uniqueOccurrences.h>
 #include<129_sumNumberTree.h>
+#include<327_countRangeSum.h>
 using namespace std;
 using namespace tree;
 
@@ -47,6 +48,7 @@ void test_case_hard() {
 	//test_reverseKListNode();
 	//test_rmDuplicates();
     //test_maxSlidingWindow();
+    test_countRangeSum();
 }
 
 void test_case_simple() {
@@ -89,7 +91,7 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	test_case_mid();
+	//test_case_mid();
 	test_case_hard();
 
 	printf("\n");
