@@ -41,6 +41,8 @@
 #include<129_sumNumberTree.h>
 #include<327_countRangeSum.h>
 #include<88_mergeSortedArray.h>
+#include<973_kClosest.h>
+#include<922_sortArrayByParityII.h>
 using namespace std;
 using namespace tree;
 
@@ -64,11 +66,12 @@ void test_case_simple() {
     //test_maxSubArray();
     //test_reverseString();
     //tree::test_maxdepth();
-    test_merge_array();
+    //test_merge_array();
+    test_sortArrayByParityII();
 }
 
 void test_case_mid() {
-    test_sumTree();
+    //test_sumTree();
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
 	//test_maxArea();
@@ -85,6 +88,7 @@ void test_case_mid() {
 	//test_swappairs();
     //test_lengthOfLIS();
     //test_minimumTotal();
+    test_kClosest();
 }
 
 int main() {
