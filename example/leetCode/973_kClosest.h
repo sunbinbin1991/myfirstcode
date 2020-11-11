@@ -15,6 +15,15 @@ int comparerVec(const void *a, const void *b ) {
     return pointA->dis - pointb->dis;
 }
 
+vector<vector<int>> kClosest_best(vector<vector<int>>& points, int K)
+{
+    sort(points.begin(), points.end(), [](const vector<int>& u, const vector<int>& v) {
+        return u[0] * u[0] + u[1] * u[1] < v[0] * v[0] + v[1] * v[1];
+    });
+    return{ points.begin(), points.begin() + K };
+}
+
+
 vector<vector<int>> kClosest(vector<vector<int>>& points, int K)
 {
     if (points.empty() || K <= 0) return {};
