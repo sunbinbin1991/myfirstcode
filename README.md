@@ -112,6 +112,8 @@ https://github.com/labuladong/fucking-algorithm
 * 每天多花五分钟,想一想如何才能比昨天进步.
 
 * 欲戴皇冠,必承其重!
+
+* 放弃幻想,准备战斗...
 ---
 Todo list
 
