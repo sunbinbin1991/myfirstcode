@@ -114,6 +114,8 @@ https://github.com/labuladong/fucking-algorithm
 * 欲戴皇冠,必承其重!
 
 * 放弃幻想,准备战斗...
+
+* 20年快结束了...
 ---
 Todo list
 
