@@ -117,7 +117,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 20年快结束了...
 
-* 
+* 20年没了
 ---
 Todo list
 
