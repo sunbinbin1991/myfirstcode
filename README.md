@@ -117,7 +117,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 20年快结束了...
 
-* 21年启程
+* 如何才能掌控自己的命运,成为那个金字塔!
 ---
 Todo list
 
