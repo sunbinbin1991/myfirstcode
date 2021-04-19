@@ -98,7 +98,7 @@ void test_case_1() {
 
 int main()
 {
-    printf("hello world\n");
+    printf("hello world 2021\n");
 
 	test_case();
 	//test_basic();
