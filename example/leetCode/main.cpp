@@ -43,6 +43,7 @@
 #include<88_mergeSortedArray.h>
 #include<973_kClosest.h>
 #include<922_sortArrayByParityII.h>
+#include<547_findCircleNum.h>
 using namespace std;
 using namespace tree;
 

@@ -40,7 +40,8 @@ void test_case() {
 	//test_printRenminbi();
 	//test_charsum();
 	//test_gongbeishu();
-	test_maxIncreseOrder();
+	//test_maxIncreseOrder();
+    //test_findCircleNum()
 }
 
 void test_case_1() {
@@ -77,7 +78,7 @@ void test_case_1() {
 	//test_split_str_by_nums();
 	//test_mlti_threads();
 	//test_calstringdistance();
-	test_maxContinuousIncreaseOrder();
+	//test_maxContinuousIncreaseOrder();
 	//test_maxprofit();
 	//test_minCostPath();
 	//test_print_triangle();
