@@ -13,46 +13,37 @@ int maxTrainNum(vector<int> dequeTrain, int start, int k,int & index)
     return maxNum;
 }
 
+void clearPriorityQue(priority_queue<pair<int, int>> &q,int index) {
+    int len = q.size();
+    priority_queue<pair<int, int>> qOut;
+    for (size_t i = 0; i < len; i++) {
+        if (q.top().second != index) {
+            qOut.emplace(q.top());
+        }
+        q.pop();
+    }
+    q = qOut;
+}
+
 vector<int> maxSlidingWindow(vector<int>& nums, int k)
 {
     vector<int> res;
     if (nums.empty()) return res;
-    if (nums.size() <= k) {
-        int maxTrain = INT_MIN;
-        for (size_t i = 0; i < nums.size(); i++) {
-            maxTrain = max(maxTrain, nums[i]);
-        }
-        res.push_back(maxTrain);
-        return res;
+    int n = nums.size();
+    priority_queue<pair<int, int>> q;
+    for (int i = 0; i < k && i < nums.size(); i++) {
+        pair<int, int> temp(nums[i],i);
+        q.push(temp);
     }
-    int maxLastTrain = INT_MIN;
-    int maxIndex = -1;
-    deque<int> numTrain;
-    for (size_t i = 0; i < nums.size(); i++) {
-        if (numTrain.empty()) {
-            numTrain.push_back(nums[i]);
-            //res.push_back(numTrain.front);
-            continue;
+    vector<int> ans = { q.top().first };
+    for (int i = k; i < nums.size(); i++) {
+        q.emplace(nums[i], i);
+        while (q.top().second <= i - k) {
+            q.pop();
         }
-        if (i < k) {
-            if (nums[i] > numTrain.front()) {
-                numTrain.pop_front();
-                numTrain.push_back(nums[i]);
-            }
-            //res.push_back(numTrain.front);
-            continue;
-        }
-        int frontNum = numTrain.front();
-        if (nums[i] < frontNum) {
-            res.push_back(nums[i]);
-            continue;
-        }
-
-        if (nums[i] > frontNum) {
-            //numTrain.
-        }
+        ans.push_back(q.top().first);
     }
-    return res;
+    return ans;
 }
 
 void test_maxSlidingWindow()

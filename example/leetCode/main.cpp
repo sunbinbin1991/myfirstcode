@@ -51,7 +51,7 @@ void test_case_hard() {
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
 	//test_rmDuplicates();
-    //test_maxSlidingWindow();
+    test_maxSlidingWindow();
     //test_countRangeSum();
 }
 
@@ -94,12 +94,12 @@ void test_case_mid() {
 
 int main() {
 	printf("*******************\n");
-	printf("*-hello leet code-*\n");
+	printf("*-hello leet code 2021-*\n");
 	printf("*******************\n");
 	
-	test_case_simple();
+	//test_case_simple();
 	//test_case_mid();
-	//test_case_hard();
+	test_case_hard();
 
 	printf("\n");
 	system("pause");
