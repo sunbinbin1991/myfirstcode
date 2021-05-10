@@ -44,6 +44,7 @@
 #include<973_kClosest.h>
 #include<922_sortArrayByParityII.h>
 #include<547_findCircleNum.h>
+#include<34_searchRange.h>
 using namespace std;
 using namespace tree;
 
@@ -89,7 +90,8 @@ void test_case_mid() {
 	//test_swappairs();
     //test_lengthOfLIS();
     //test_minimumTotal();
-    test_kClosest();
+    //test_kClosest();
+    test_searchRange();
 }
 
 int main() {
@@ -98,8 +100,8 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	//test_case_mid();
-	test_case_hard();
+	test_case_mid();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");
