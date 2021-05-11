@@ -4,7 +4,22 @@
 #include<algorithm>
 using namespace std;
 
-void binarySearch() {
+int binarySearch(vector<int>& nums, int target, bool lower) {
+    int left = 0, right = (int)nums.size() - 1, ans = (int)nums.size();
+    while (left <= right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] > target || (lower && nums[mid] >= target)) {
+            right = mid - 1;
+            ans = mid;
+        } else {
+            left = mid + 1;
+        }
+    }
+    return ans;
+}
+
+vector<int> searchRange2(vector<int>& nums, int target)
+{
 
 }
 
@@ -25,9 +40,14 @@ vector<int> searchRange(vector<int>& nums, int target)
 
 void test_searchRange() {
     vector<int> nums = { 5,7,7,8,8,10 };
-    int target = 10;
+    int target = 8;
     auto res = searchRange(nums, target);
     for (int i = 0; i < res.size(); i++) {
-        printf("%d \n", res[i]);
+        printf("searchRange %d \n", res[i]);
+    }
+
+    res = searchRange2(nums, target);
+    for (int i = 0; i < res.size(); i++) {
+        printf("searchRange2 %d \n", res[i]);
     }
 }
