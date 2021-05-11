@@ -45,6 +45,7 @@
 #include<922_sortArrayByParityII.h>
 #include<547_findCircleNum.h>
 #include<34_searchRange.h>
+#include<198_rob.h>
 using namespace std;
 using namespace tree;
 
@@ -91,7 +92,8 @@ void test_case_mid() {
     //test_lengthOfLIS();
     //test_minimumTotal();
     //test_kClosest();
-    test_searchRange();
+    //test_searchRange();
+    test_rob();
 }
 
 int main() {

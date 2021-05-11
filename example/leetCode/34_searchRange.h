@@ -20,7 +20,7 @@ int binarySearch(vector<int>& nums, int target, bool lower) {
 
 vector<int> searchRange2(vector<int>& nums, int target)
 {
-
+    return{};
 }
 
 vector<int> searchRange(vector<int>& nums, int target)
