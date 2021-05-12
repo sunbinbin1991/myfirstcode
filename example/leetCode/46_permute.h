@@ -10,9 +10,7 @@ void dfs(vector<int>& nums, int len,int depth,
 		return ;
 	}
 	for (size_t i = 0; i < len; i++) {
-		if (used[i]) {
-			continue;
-		}
+		if (used[i]) continue;
 		path.push(nums[i]);
 		used[i] = true;
 		dfs(nums, len, depth + 1, path, used, result);
@@ -35,10 +33,8 @@ void test_permute()
 		for (size_t j = 0; j < ttlen; j++) {
 			int tmp = results[i].top();
 			results[i].pop();
-			//cout << tmp << "\t";
+			cout << tmp << "\t";
 		}
-		//cout << "\n";
+		cout << "\n";
 	}
-
-
 }

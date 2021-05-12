@@ -78,7 +78,7 @@ void test_case_mid() {
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
 	//test_maxArea();
-	//test_permute();
+	test_permute();
 	//test_zconvert();
 	//test_atoi();
 	//test_roman2num();
@@ -93,7 +93,7 @@ void test_case_mid() {
     //test_minimumTotal();
     //test_kClosest();
     //test_searchRange();
-    test_rob();
+    //test_rob();
 }
 
 int main() {
