@@ -46,6 +46,7 @@
 #include<547_findCircleNum.h>
 #include<34_searchRange.h>
 #include<198_rob.h>
+#include<42_trap.h>
 using namespace std;
 using namespace tree;
 
@@ -53,7 +54,8 @@ void test_case_hard() {
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
 	//test_rmDuplicates();
-    test_maxSlidingWindow();
+    //test_maxSlidingWindow();
+    test_trap();
     //test_countRangeSum();
 }
 
@@ -102,8 +104,8 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	test_case_mid();
-	//test_case_hard();
+	//test_case_mid();
+	test_case_hard();
 
 	printf("\n");
 	system("pause");
