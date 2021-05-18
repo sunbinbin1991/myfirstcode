@@ -47,6 +47,8 @@
 #include<34_searchRange.h>
 #include<198_rob.h>
 #include<42_trap.h>
+#include<55_canJump.h>
+
 using namespace std;
 using namespace tree;
 
