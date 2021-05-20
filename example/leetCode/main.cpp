@@ -50,6 +50,7 @@
 #include<55_canJump.h>
 #include<33_search.h>
 #include<215_findKthLargest.h>
+#include<136_singleNum.h>
 
 using namespace std;
 using namespace tree;
@@ -101,7 +102,8 @@ void test_case_mid() {
     //test_searchRange();
     //test_rob();
     //test_search();
-    test_findKthLargest();
+    //test_findKthLargest();
+    test_singleNumber2();
 }
 
 int main() {
