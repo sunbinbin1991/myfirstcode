@@ -7,10 +7,8 @@ bool canJump(vector<int>& nums)
     vector<int> DP(len);
     DP[0] = nums[0];
     bool canJump = DP[0] > 0;
-    for (int i = 1; i < len; ++i) {
-        for (int j = 1; j <= i; ++j) {
-            DP[i] = max(DP[j - 1] - 1, nums[j]);
-        }
+    for (int i = 1; i < len - 1; ++i) {
+        DP[i] = max(DP[i - 1] - 1, nums[i]);
         canJump = canJump && DP[i] > 0;
     }
     return canJump;

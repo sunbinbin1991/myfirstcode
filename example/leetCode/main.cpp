@@ -48,6 +48,8 @@
 #include<198_rob.h>
 #include<42_trap.h>
 #include<55_canJump.h>
+#include<33_search.h>
+#include<215_findKthLargest.h>
 
 using namespace std;
 using namespace tree;
@@ -82,7 +84,7 @@ void test_case_mid() {
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
 	//test_maxArea();
-	test_permute();
+	//test_permute();
 	//test_zconvert();
 	//test_atoi();
 	//test_roman2num();
@@ -98,6 +100,8 @@ void test_case_mid() {
     //test_kClosest();
     //test_searchRange();
     //test_rob();
+    //test_search();
+    test_findKthLargest();
 }
 
 int main() {
@@ -106,8 +110,8 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	//test_case_mid();
-	test_case_hard();
+	test_case_mid();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");
