@@ -51,6 +51,8 @@
 #include<33_search.h>
 #include<215_findKthLargest.h>
 #include<136_singleNum.h>
+#include<92_reverseBetween.h>
+#include<461_hamingDistance.h>
 
 using namespace std;
 using namespace tree;
@@ -60,7 +62,7 @@ void test_case_hard() {
 	//test_reverseKListNode();
 	//test_rmDuplicates();
     //test_maxSlidingWindow();
-    test_trap();
+    //test_trap();
     //test_countRangeSum();
 }
 
@@ -77,7 +79,8 @@ void test_case_simple() {
     //test_reverseString();
     //tree::test_maxdepth();
     //test_merge_array();
-    test_sortArrayByParityII();
+    //test_sortArrayByParityII();
+    test_hammingDistance();
 }
 
 void test_case_mid() {
@@ -103,7 +106,8 @@ void test_case_mid() {
     //test_rob();
     //test_search();
     //test_findKthLargest();
-    test_singleNumber2();
+    //test_singleNumber2();
+    //test_reverseBetween();
 }
 
 int main() {
@@ -111,8 +115,8 @@ int main() {
 	printf("*-hello leet code 2021-*\n");
 	printf("*******************\n");
 	
-	//test_case_simple();
-	test_case_mid();
+	test_case_simple();
+	//test_case_mid();
 	//test_case_hard();
 
 	printf("\n");
