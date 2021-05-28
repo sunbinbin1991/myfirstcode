@@ -15,7 +15,7 @@ vector<int> bin2vec(int nums) {
     }
     return vec;
 }
-int hammingDistance(int x, int y)
+int hammingDistance2(int x, int y)
 {
     int s = x ^ y, ret = 0;
     while (s) {
