@@ -26,6 +26,7 @@ int triangleNumber(vector<int>& nums)
             }
         }
     }
+
     return ans;
 }
 
@@ -35,17 +36,13 @@ int triangleNumber_better(vector<int>& nums)
     sort(nums.begin(), nums.end());
     int len = nums.size();
     int ans = 0;
-    for (size_t i = 0; i < len - 2; i++) {
-        for (size_t j = i + 1; j < len - 1; j++) {
-            for (size_t k = j + 1; k < len; k++) {
-                vector<int> trmp = { nums[i], nums[j], nums[k] };
-                if (nums[i] + nums[j] < nums[k]) {
-                    continue;
-                }
-                if (checkTriangle(trmp)) {
-                    ans++;
-                }
+    for (int i = 0; i < len; ++i) {
+        int k = i;
+        for (int j = i + 1; j < len; ++j) {
+            while (k + 1 < len && nums[k + 1] < nums[i] + nums[j]) {
+                ++k;
             }
+            ans += max(k - j, 0);
         }
     }
     return ans;
