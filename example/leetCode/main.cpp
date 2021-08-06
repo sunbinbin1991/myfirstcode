@@ -54,6 +54,7 @@
 #include<92_reverseBetween.h>
 #include<461_hamingDistance.h>
 #include<611_triangleNumber.h>
+#include<103_zigzagLevelOrder.h>
 
 using namespace std;
 using namespace tree;
@@ -81,10 +82,11 @@ void test_case_simple() {
     //tree::test_maxdepth();
     //test_merge_array();
     //test_sortArrayByParityII();
-    test_hammingDistance();
+    //test_hammingDistance();
 }
 
 void test_case_mid() {
+    test_zigzagLevelOrder();
     //test_sumTree();
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
@@ -109,7 +111,7 @@ void test_case_mid() {
     //test_findKthLargest();
     //test_singleNumber2();
     //test_reverseBetween();
-    test_triangleNumber();
+    //test_triangleNumber();
 }
 
 int main() {
