@@ -120,6 +120,8 @@ https://github.com/labuladong/fucking-algorithm
 * 如何才能掌控自己的命运,成为那个金字塔!
 
 * 成为想成为的人,一个优秀的人
+
+* 总有些人,你是是否讨厌,甚至厌恶的人,你愿意将这个世界让给他们这些人么?
 ---
 Todo list
 
