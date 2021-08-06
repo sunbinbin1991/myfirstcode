@@ -3,52 +3,40 @@
 #include<deque>
 //#include"tree.h"
 using namespace tree;
+vector<int> getVec(queue<TreeNode*>treeQue, queue<TreeNode*>& treeQue2) {
+    vector<int> temp;
+    while (!treeQue.empty()) {
+        auto front = treeQue.front();
+        if (front->left) {
+            treeQue2.push(front->left);
+        }
+        if (front->right) {
+            treeQue2.push(front->right);
+        }
+        temp.push_back(front->val);
+        treeQue.pop();
+    }
+    return temp;
+}
+
 vector<vector<int>> zigzagLevelOrder(TreeNode* root)
 {
     if (root == nullptr) return{};
     vector<vector<int>> ans;
-    deque<TreeNode*> treeQue;
-    treeQue.push_back(root);
+    queue<TreeNode*> treeQue;
+    treeQue.push(root);
     bool isFromLeft = true;
     while (!treeQue.empty()) {
-        deque<TreeNode*> treeQue2;
+        queue<TreeNode*> treeQue2;
         if (isFromLeft) {
-            vector<int> temp;
-            while (!treeQue.empty()) {
-                auto front = treeQue.front();
-                if (front->left) {
-                    treeQue2.push_back(front->left);
-                }
-                if (front->right) {
-                    treeQue2.push_back(front->right);
-                }
-                temp.push_back(front->val);
-                treeQue.pop_front();
-            }
-            for (size_t i = 0; !temp.empty() && i < temp.size(); i++) {
-                cout << temp[i];
-            }
-            cout << endl;
+            vector<int> temp = getVec(treeQue, treeQue2);
             ans.push_back(temp);
         }
         if (!isFromLeft) {
-            vector<int> temp;
-            while (!treeQue.empty()) {
-                auto front = treeQue.front();
-                if (front->left) {
-                    treeQue2.push_back(front->left);
-                }
-                if (front->right) {
-                    treeQue2.push_back(front->right);
-                }
-                temp.push_back(front->val);
-                treeQue.pop_front();
-            }
-            for (size_t i = 0; !temp.empty() && i < temp.size()/2; i++) {
+            vector<int> temp = getVec(treeQue, treeQue2);
+            for (size_t i = 0; !temp.empty() && i < temp.size() / 2; i++) {
                 swap(temp[i], temp[temp.size() - 1 - i]);
-                cout << temp[i]<<"--- "<< temp[temp.size() - 1 - i];
             }
-            cout << endl;
             ans.push_back(temp);
         }
         isFromLeft = !isFromLeft;
@@ -76,8 +64,9 @@ void test_zigzagLevelOrder()
     auto res = zigzagLevelOrder(rot2);
     for (size_t i = 0; i < res.size(); i++) {
         for (size_t j = 0; j < res[i].size(); j++) {
-            //cout << res[i][j] << endl;
+            cout << res[i][j];
         }
+        cout << endl;
     }
 
     return;
