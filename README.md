@@ -118,6 +118,8 @@ https://github.com/labuladong/fucking-algorithm
 * 20年快结束了...
 
 * 如何才能掌控自己的命运,成为那个金字塔!
+
+* 成为想成为的人,一个优秀的人
 ---
 Todo list
 
