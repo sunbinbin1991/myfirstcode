@@ -57,6 +57,7 @@
 #include<103_zigzagLevelOrder.h>
 #include<457_circularArrayLoop.h>
 #include<154_findMin.h>
+#include<offer21_exchange.h>
 
 using namespace std;
 using namespace tree;
@@ -72,6 +73,7 @@ void test_case_hard() {
 }
 
 void test_case_simple() {
+    test_exchange();
 	//test_lengthOfLongestSubstring();
 	//tet_longestCommonPrefix();
     //test_strStr();
@@ -123,7 +125,7 @@ int main() {
 	printf("*-hello leet code 2021-*\n");
 	printf("*******************\n");
 	
-	//test_case_simple();
+	test_case_simple();
 	//test_case_mid();
 	test_case_hard();
 
