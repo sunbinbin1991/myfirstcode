@@ -55,6 +55,7 @@
 #include<461_hamingDistance.h>
 #include<611_triangleNumber.h>
 #include<103_zigzagLevelOrder.h>
+#include<457_circularArrayLoop.h>
 
 using namespace std;
 using namespace tree;
@@ -86,7 +87,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_zigzagLevelOrder();
+    test_circularArrayLoop();
+    //test_zigzagLevelOrder();
     //test_sumTree();
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();
