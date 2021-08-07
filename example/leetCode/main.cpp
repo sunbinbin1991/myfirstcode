@@ -56,11 +56,13 @@
 #include<611_triangleNumber.h>
 #include<103_zigzagLevelOrder.h>
 #include<457_circularArrayLoop.h>
+#include<154_findMin.h>
 
 using namespace std;
 using namespace tree;
 
 void test_case_hard() {
+    test_findMin();
 	//test_findMedianSortedArrays();
 	//test_reverseKListNode();
 	//test_rmDuplicates();
@@ -122,8 +124,8 @@ int main() {
 	printf("*******************\n");
 	
 	//test_case_simple();
-	test_case_mid();
-	//test_case_hard();
+	//test_case_mid();
+	test_case_hard();
 
 	printf("\n");
 	system("pause");
