@@ -9,7 +9,7 @@ vector<int> exchange(vector<int>& nums)
     int n = nums.size();
     int leftcout = 0;
     while (left < n) {
-        if (nums[left] & 1 != 0) {
+        if (nums[left] & 1 != 0) { // ÆæÊý
             swap(nums[leftcout++], nums[left]);
         }
         left++;
@@ -18,7 +18,7 @@ vector<int> exchange(vector<int>& nums)
     cout <<( 4 & 1) << endl;
     cout << (3 & 1) << endl;
     cout << (2 & 1) << endl;
-    cout << (1 & 1) << endl;
+    cout << (1 & 1 ) << endl; 
     return nums;
 }
 
