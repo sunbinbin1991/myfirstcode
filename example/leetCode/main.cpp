@@ -58,6 +58,7 @@
 #include<457_circularArrayLoop.h>
 #include<154_findMin.h>
 #include<offer21_exchange.h>
+#include<313_nthSuperUglyNumber.h>
 
 using namespace std;
 using namespace tree;
@@ -91,8 +92,10 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_circularArrayLoop();
+    test_nthSuperUglyNumber();
+    //test_circularArrayLoop();
     //test_zigzagLevelOrder();
+
     //test_sumTree();
 	//test_lengthOfLongestSubstring();
 	//test_longestPalindro();

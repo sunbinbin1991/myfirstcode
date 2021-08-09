@@ -6,7 +6,7 @@ bool isNotPrimer(int num) {
 	bool flag = false;
 	for (size_t i = 2; i < num>>1; i++)
 	{
-		if (num%i == 0) {
+		if (num % i == 0) {
 			flag = true;
 			return flag;
 		}
