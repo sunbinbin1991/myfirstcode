@@ -15,6 +15,8 @@ bool isNotPrimer(int num)
     return flag;
 }
 // 这题为什么不用dfs ? 不合适?
+// 从1-N个逐个遍历,对于每个N,使用最小堆,
+// 将数组中的元素依次添加, 添加的元素为最小堆的top值和当前数组中元素的依次乘积
 int nthSuperUglyNumber(int n, vector<int>& primes)
 {
     unordered_set<long> seen;
