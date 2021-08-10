@@ -14,7 +14,7 @@ bool isNotPrimer(int num)
     }
     return flag;
 }
-
+// 这题为什么不用dfs ? 不合适?
 int nthSuperUglyNumber(int n, vector<int>& primes)
 {
     unordered_set<long> seen;
