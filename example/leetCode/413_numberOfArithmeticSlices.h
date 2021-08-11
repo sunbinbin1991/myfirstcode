@@ -22,6 +22,23 @@ int numberOfArithmeticSlices(vector<int>& nums)
     }
     return ans;
 }
+    int numberOfArithmeticSlices(vector<int>& nums) {
+        if(nums.empty() || nums.size() < 3) return 0;
+        vector<int> dp(nums.size());
+        int ans = 0;
+        int d = nums[1] - nums[0];
+        int t = 0;
+        for (int i = 2; i < nums.size(); ++i) {
+            if(nums[i] - nums[i-1] == d){
+                t++;   
+            } else {
+                d = nums[i] - nums[i-1];
+                t = 0;
+            }
+            ans += t;
+        }
+        return ans;
+    }
 
 void test_numberOfArithmeticSlices() {
     vector<int> nums = { 1,2,3,4 };
