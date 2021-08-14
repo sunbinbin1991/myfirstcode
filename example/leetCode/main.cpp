@@ -59,6 +59,7 @@
 #include<154_findMin.h>
 #include<offer21_exchange.h>
 #include<313_nthSuperUglyNumber.h>
+#include<1583_unhappyFriends.h>
 
 using namespace std;
 using namespace tree;
@@ -92,7 +93,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_nthSuperUglyNumber();
+    test_unhappyFriends();
+    //test_nthSuperUglyNumber();
     //test_circularArrayLoop();
     //test_zigzagLevelOrder();
 
@@ -128,9 +130,9 @@ int main() {
 	printf("*-hello leet code 2021-*\n");
 	printf("*******************\n");
 	
-	test_case_simple();
-	//test_case_mid();
-	test_case_hard();
+	//test_case_simple();
+	test_case_mid();
+	//test_case_hard();
 
 	printf("\n");
 	system("pause");
