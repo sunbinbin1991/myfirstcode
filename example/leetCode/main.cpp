@@ -60,6 +60,7 @@
 #include<offer21_exchange.h>
 #include<313_nthSuperUglyNumber.h>
 #include<1583_unhappyFriends.h>
+#include<213_rob.h>
 
 using namespace std;
 using namespace tree;
@@ -93,7 +94,9 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_unhappyFriends();
+    test_rob2();
+
+    //test_unhappyFriends();
     //test_nthSuperUglyNumber();
     //test_circularArrayLoop();
     //test_zigzagLevelOrder();

@@ -23,7 +23,8 @@ int rob(vector<int>& nums) {
 }
 
 void test_rob() {
-    vector<int> nums = { 2,7,9,3,1 };
+    //vector<int> nums = { 2,7,9,3,1 };
+    vector<int> nums = {1 ,2, 3, 1};
     int res = rob(nums);
     cout << "res = " << res;
 }

@@ -8,7 +8,7 @@ using namespace std;
 //2:找到朋友 yy 在朋友 xx 的朋友列表中的亲近程度下标，记为 \textit{ index }index。
 //3:朋友 xx 的朋友列表中的下标从 00 到 \textit{ index }-1index−1 的朋友都是可能的 uu。遍历每个可能的 uu，找到与朋友 uu 配对的朋友 vv。
 //4:如果 \textit{ order }[u][x] < \textit{ order }[u][v]order[u][x]<order[u][v]，则 xx 是不开心的朋友。
-//
+
 bool isHappy(int index, vector<vector<int>>& preferences,
     map<int, int> &pairSets) {
     int pair = pairSets[index];
@@ -58,6 +58,11 @@ int unhappyFriends(int n, vector<vector<int>>& preferences, vector<vector<int>>&
                 
             }
         }
+
+       /* if (matrix[i][pairSets[i]]&& matrix[i][pairSets[i]] < ) {
+            ans++;
+        }*/
+
     }
     return ans;
 }
