@@ -61,7 +61,7 @@
 #include<313_nthSuperUglyNumber.h>
 #include<1583_unhappyFriends.h>
 #include<213_rob.h>
-
+#include<47_permuteUnique.h>
 using namespace std;
 using namespace tree;
 
@@ -94,7 +94,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_rob2();
+    test_permuteUnique();
+    //test_rob2();
 
     //test_unhappyFriends();
     //test_nthSuperUglyNumber();
@@ -141,3 +142,4 @@ int main() {
 	system("pause");
 	return -1;
 }
+
