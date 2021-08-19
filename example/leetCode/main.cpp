@@ -62,6 +62,7 @@
 #include<1583_unhappyFriends.h>
 #include<213_rob.h>
 #include<47_permuteUnique.h>
+#include<offer_46_translateNum.h>
 using namespace std;
 using namespace tree;
 
@@ -94,7 +95,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_permuteUnique();
+    test_translateNum();
+    //test_permuteUnique();
     //test_rob2();
 
     //test_unhappyFriends();

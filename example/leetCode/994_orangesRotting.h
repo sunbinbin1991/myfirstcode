@@ -34,7 +34,7 @@ public:
                 Q.push(make_pair(tx, ty));
                 if (grid[tx][ty] == 1) {
                     cnt -= 1;
-                    ans = dis[tx][ty];
+                    ans = l3[tx][ty];
                     if (!cnt) break;
                 }
             }
