@@ -124,6 +124,8 @@ https://github.com/labuladong/fucking-algorithm
 * 总有些人,你是是否讨厌,甚至厌恶的人,你愿意将这个世界让给他们这些人么?
 
 * 从泥沼里爬出来的才是圣人,烧不死的鸟才是凤凰
+
+* 今日休息-20210821
 ---
 Todo list
 
