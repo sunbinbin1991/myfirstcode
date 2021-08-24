@@ -126,6 +126,8 @@ https://github.com/labuladong/fucking-algorithm
 * 从泥沼里爬出来的才是圣人,烧不死的鸟才是凤凰
 
 * 今日休息-20210821
+
+* 我距离一个P7 还有多远?如果不是现在,那应该是什么时候?
 ---
 Todo list
 
