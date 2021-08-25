@@ -32,7 +32,7 @@ int translateNum(int num)
     for (size_t i = 0; i < s.size(); i++) {
         cout << vis[i] << endl;
     }
-    dfsTransNum(ans, s, vis, paht);
+    //dfsTransNum2(ans, s, vis, paht);
     return 0;
 }
 
