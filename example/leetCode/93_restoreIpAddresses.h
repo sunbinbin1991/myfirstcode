@@ -1,3 +1,8 @@
+#include<vector>
+#include<string>
+#include<algorithm>
+#include<iostream>
+using namespace std;
 void dfsIPAddr(string s, vector<vector<int>>& paths, vector<int>& path,
          int level, vector<bool>& vis)
 {
