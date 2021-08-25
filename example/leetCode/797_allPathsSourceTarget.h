@@ -1,4 +1,8 @@
 #pragma once
+#include<string>
+#include<algorithm>
+#include<iostream>
+using namespace std;
 void dfsGraph(vector<vector<int>>& graph, vector<vector<int>>& paths, vector<int>& path, int i)
 {
     if (i == graph.size() - 1) {
@@ -6,10 +10,10 @@ void dfsGraph(vector<vector<int>>& graph, vector<vector<int>>& paths, vector<int
         return;
     }
 
-    for (auto p : graph[i]) {
-        path.push_back(p);
-        dfsGraph(graph, paths, path, p);
-        path.pop_back();
+    for (auto p : graph[i]) { // 针对第i个点的所有可能性,p为所有在i中的节点可能性
+        path.push_back(p);  // 将可能的p点加入
+        dfsGraph(graph, paths, path, p); // 下一步,在p点时,继续走,去找p点的所有可能结果
+        path.pop_back(); // 将当前加入的p点取出
     }
 
 }
