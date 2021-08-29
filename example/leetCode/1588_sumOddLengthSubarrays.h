@@ -12,9 +12,8 @@ int sumOddLengthSubarrays(vector<int>& arr)
         if (j % 2 == 0) {
         } else {
             for (int i = 0; i <= arr.size() - j; i++) {
-                for (int k = 0; k < j && (k + i <= arr.size() - 1); k++) {
+                for (int k = 0; k < j; k++) {
                     ans += arr[k + i];
-                    // cout << arr[k + i] << endl;
                 }
 
             }
