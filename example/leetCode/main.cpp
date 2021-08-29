@@ -63,6 +63,7 @@
 #include<213_rob.h>
 #include<47_permuteUnique.h>
 #include<offer_46_translateNum.h>
+#include<77_combine.h>
 using namespace std;
 using namespace tree;
 
@@ -95,7 +96,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_translateNum();
+    test_combine();
+    //test_translateNum();
     //test_permuteUnique();
     //test_rob2();
 

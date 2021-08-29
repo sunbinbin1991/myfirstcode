@@ -30,9 +30,7 @@ int sumOddLengthSubarrays(vector<int>& arr)
                 for (int k = 0; k < j; k++) {
                     ans += arr[k + i];
                 }
-
             }
-
         }
     }
     return ans;
