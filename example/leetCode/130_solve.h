@@ -2,7 +2,49 @@ class Solution130 {
 private:
     vector<vector<bool>> vis;
 public:
-    void dfsBoard(vector<vector<char>>& board,
+      void dfsBoard_Y(vector<vector<char>>& board,
+                  int col, int row,
+                  int i, int j) {
+        if(i < 0 || j >= row || i >= col || j < 0  || board[i][j] == 'X' || board[i][j] == 'A'){
+            return;
+        }
+        board[i][j] = 'A';
+        dfsBoard(board, col, row, i - 1, j);
+        dfsBoard(board, col, row, i + 1, j);
+        dfsBoard(board, col, row, i, j - 1);
+        dfsBoard(board, col, row, i, j + 1);
+    }
+
+    void solve_Y(vector<vector<char>>& board) {
+        int col = board.size();
+        int row = board[0].size();
+        vis.resize(col, vector<bool>(row));
+        for (int i = 0; i < col; ++i) {
+            for (int j = 0; j < row; ++j) {
+                char  ch = board[i][j];
+                if(ch == 'X') {
+                    continue;
+                }
+                bool isEdge = i == 0 || j == 0 || i == col - 1 || j == row - 1;
+                if(isEdge){
+                    dfsBoard(board, col, row, i, j);
+                }
+            }
+        }
+        for (int k = 0; k < col; ++k) {
+            for (int j = 0; j < row; ++j) {
+                if(board[k][j] == 'O'){
+                    board[k][j] = 'X';
+                }
+                if(board[k][j] == 'A') {
+                    board[k][j] = 'O';
+                }
+            }
+        }
+    }
+    
+    
+    void dfsBoard_N(vector<vector<char>>& board,
                   vector<vector<pair<int, int>>>& paths,
                   vector<pair<int, int>>& path,
                   int col, int row,
@@ -62,7 +104,7 @@ public:
         }
     }
 
-    void solve(vector<vector<char>>& board) {
+    void solve_N(vector<vector<char>>& board) {
         int col = board.size();
         int row = board[0].size();
         vis.resize(col, vector<bool>(row));
