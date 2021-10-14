@@ -1,4 +1,9 @@
 #pragma once
+#include<vector>
+#include<string>
+#include<algorithm>
+#include<iostream>
+using namespace std;
 vector<string> fullJustify(vector<string>& words, int maxWidth)
 {
     if (words.empty()) return{};
