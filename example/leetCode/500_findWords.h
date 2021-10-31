@@ -1,3 +1,8 @@
+#include<vector>
+#include<deque>
+#include<algorithm>
+#include<map>
+using namespace std;
 static set<char> g_set2 = { 'a','s','d','f','g','h','j','k','l' };
 static set<char> g_set3 = { 'z','x','c','v','b','n','m' };
 class Solution500 {
