@@ -64,6 +64,7 @@
 #include<47_permuteUnique.h>
 #include<offer_46_translateNum.h>
 #include<77_combine.h>
+#include<500_findWords.h>
 using namespace std;
 using namespace tree;
 
