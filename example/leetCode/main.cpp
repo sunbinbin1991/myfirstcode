@@ -65,6 +65,7 @@
 #include<offer_46_translateNum.h>
 #include<77_combine.h>
 #include<500_findWords.h>
+#include<275_hIndex.h>
 using namespace std;
 using namespace tree;
 
@@ -97,7 +98,8 @@ void test_case_simple() {
 }
 
 void test_case_mid() {
-    test_combine();
+    
+    //test_combine();
     //test_translateNum();
     //test_permuteUnique();
     //test_rob2();
@@ -136,7 +138,7 @@ void test_case_mid() {
 
 int main() {
 	printf("*******************\n");
-	printf("*-hello leet code 2021-*\n");
+	printf("*-hello leet 2022-*\n");
 	printf("*******************\n");
 	
 	//test_case_simple();
