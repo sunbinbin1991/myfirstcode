@@ -131,6 +131,8 @@ https://github.com/labuladong/fucking-algorithm
 * 今日休息-20210821
 
 * 我距离一个P7 还有多远?如果不是现在,那应该是什么时候?
+
+* 拥抱孤独, 过滤外界杂音, 平稳心态
 ---
 Todo list
 
