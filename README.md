@@ -100,10 +100,7 @@ https://github.com/labuladong/fucking-algorithm
 
 * 士不可以不弘毅,任重而道远.
 
-* 这都已经22年了啊
-
 *  面向接口而不是面向实现编程
-* 
 
 * 努力吧,少年呢~~
 
@@ -138,6 +135,8 @@ https://github.com/labuladong/fucking-algorithm
 * 我距离一个P7 还有多远?如果不是现在,那应该是什么时候?
 
 * 拥抱孤独, 过滤外界杂音, 平稳心态*2
+
+* 这都已经22年了啊
 ---
 Todo list
 
