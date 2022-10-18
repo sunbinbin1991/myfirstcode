@@ -143,6 +143,8 @@ https://github.com/labuladong/fucking-algorithm
 * 大约是厌倦了无止境地“必学”清单。我们在一场又一场的设定游戏里奔波太久；太阳升起的时候，怀着创造诗意的热情去投入实践；而不是因为恐惧和焦虑去学习。
 
 *  如果一个人年龄变大了，而父母依然很辛苦的的话，那这个人并没有真正长大
+
+*  Great minds discuss ideas（伟人谈论想法） Average minds discuss events（普通人谈论事件） Small minds discuss people（庸人谈论他人）
 ---
 Todo list
 
