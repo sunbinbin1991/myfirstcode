@@ -156,6 +156,8 @@ Todo list
 题目list:
 > 129: 求根到叶子节点数字之和
 
-
+--- 
+some useful blog code or tools
+> 1:  左耳听风的博客 https://learn.lianglianglee.com/ 
 
 * ps：coding never stop!!
