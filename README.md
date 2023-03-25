@@ -145,6 +145,9 @@ https://github.com/labuladong/fucking-algorithm
 *  如果一个人年龄变大了，而父母依然很辛苦的的话，那这个人并没有真正长大
 
 *  Great minds discuss ideas（伟人谈论想法） Average minds discuss events（普通人谈论事件） Small minds discuss people（庸人谈论他人）
+
+* 这都已经23年了啊
+
 ---
 Todo list
 
