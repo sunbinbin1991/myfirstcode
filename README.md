@@ -149,6 +149,8 @@ https://github.com/labuladong/fucking-algorithm
 * 这都已经23年了啊
 
 * 做一些有趣的事，想做的事，而不是老的也能做的事
+
+* 当下就是最好的时刻，当下就是最好的年华，当下就是最快乐的时候
 ---
 Todo list
 
