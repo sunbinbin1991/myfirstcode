@@ -151,6 +151,8 @@ https://github.com/labuladong/fucking-algorithm
 * 做一些有趣的事，想做的事，而不是老的也能做的事
 
 * 当下就是最好的时刻，当下就是最好的年华，当下就是最快乐的时候
+
+* 放弃幻想,准备战斗2...
 ---
 Todo list
 
