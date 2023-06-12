@@ -153,6 +153,8 @@ https://github.com/labuladong/fucking-algorithm
 * 当下就是最好的时刻，当下就是最好的年华，当下就是最快乐的时候
 
 * 放弃幻想,准备战斗2...
+
+* 选择安逸这条路的，最终必定不会获得安逸
 ---
 Todo list
 
