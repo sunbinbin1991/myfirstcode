@@ -161,7 +161,7 @@ https://github.com/labuladong/fucking-algorithm
 
 - [x] 程序员的职业素养
 - [ ] 深入理解计算机系统
-- [ ] 
+- [ ]  C++编程思想
 
 ---
 Todo list
