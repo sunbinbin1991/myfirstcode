@@ -155,6 +155,14 @@ https://github.com/labuladong/fucking-algorithm
 * 放弃幻想,准备战斗2...
 
 * 选择安逸这条路的，最终必定不会获得安逸
+
+---
+技术书籍阅读列表
+
+- [x] 程序员的职业素养
+- [ ] 深入理解计算机系统
+- [ ] 
+
 ---
 Todo list
 
@@ -170,4 +178,8 @@ Todo list
 some useful blog code or tools
 > 1:  左耳听风的博客 https://learn.lianglianglee.com/ 
 
+> 2:书单列表：https://github.com/0voice/expert_readed_books
+
 * ps：coding never stop!!
+
+
