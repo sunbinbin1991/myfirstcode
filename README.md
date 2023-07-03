@@ -160,7 +160,7 @@ https://github.com/labuladong/fucking-algorithm
 技术书籍阅读列表
 
 - [x] 程序员的职业素养
-- [ ] 深入理解计算机系统
+- [x] 深入理解计算机系统
 - [ ]  C++编程思想
 
 ---
