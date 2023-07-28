@@ -156,6 +156,8 @@ https://github.com/labuladong/fucking-algorithm
 
 * 选择安逸这条路的，最终必定不会获得安逸
 
+* 人的开窍往往是一瞬间的事情，说不定就在不远处
+
 ---
 技术书籍阅读列表
 
