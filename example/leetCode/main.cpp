@@ -66,6 +66,7 @@
 #include<77_combine.h>
 #include<500_findWords.h>
 #include<275_hIndex.h>
+#include<0626_demo1.h>
 using namespace std;
 using namespace tree;
 
@@ -136,15 +137,19 @@ void test_case_mid() {
     //test_triangleNumber();
 }
 
+void test_case11() {
+    test_demo_0626();
+}
+
 int main() {
 	printf("*******************\n");
-	printf("*-hello leet 2022-*\n");
+	printf("*-hello leet 2023-*\n");
 	printf("*******************\n");
 	
 	//test_case_simple();
-	test_case_mid();
+	//test_case_mid();
 	//test_case_hard();
-
+    test_case11();
 	printf("\n");
 	system("pause");
 	return -1;

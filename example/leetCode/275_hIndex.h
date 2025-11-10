@@ -1,9 +1,9 @@
-#pragma once
-int hIndex(vector<int>& citations)
-{
-
-}
-
-void test_hIndex() 
-{
-}
+//#pragma once
+//int hIndex(vector<int>& citations)
+//{
+//    //return 0;
+//}
+//
+//void test_hIndex() 
+//{
+//}

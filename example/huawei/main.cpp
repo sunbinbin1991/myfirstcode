@@ -21,6 +21,8 @@
 #include <charSum.h>
 #include <MaxGongbeishu.h>
 #include <dp_maxIncreaseOrder.h>
+#include "demo_1206.h"
+#include "demo_1213.h"
 void test_case() {
 	//test_matchstring();
 	//test_sortMap();
@@ -97,12 +99,18 @@ void test_case_1() {
 
 }
 
+void test_demo_1() {
+    //test_demo_0626();
+}
+
 int main()
 {
-    printf("hello world 2021\n");
+    printf("hello world 2023\n");
 
-	test_case();
+	//test_case();
 	//test_basic();
+    //test_1206();
+    test_1213();
 	system("pause");
 	return 0;
 }
