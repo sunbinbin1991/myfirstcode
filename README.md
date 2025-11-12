@@ -16,7 +16,7 @@ https://github.com/labuladong/fucking-algorithm
 * 4：labuladong的算法小抄
  https://labuladong.gitee.io/algo/
 
-* 5. hot100
+* 5: hot100
   https://leetcode.cn/studyplan/top-100-liked/
 
 ### 题目索引:
